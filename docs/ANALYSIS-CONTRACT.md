@@ -1,5 +1,13 @@
 # Analysis contract, version 1.0
 
+## SQLite enrichment extension (17 October 2026)
+
+The historical recovery layout and JSON below remain unchanged. New browser question captures are preserved separately under `data/mocks/<mock-id>/sources/full-review/<SECTION>-qNN.json`. Each mock additionally has `<mock-id>.db`, a standalone SQLite export built by `scripts/build_mock_databases.py`; it overlays verified captures on the historical 68 rows without duplicating original attempts. These exports are currently partial. See [data/DATABASES.md](../data/DATABASES.md) for schema, actual coverage and the browser transport blocker.
+
+Retain full question HTML alongside text to preserve math/content, complete ordered options, independently observed selection/key indicators, shared stimuli, solutions and source bytes. Do not infer MCQ/TITA format from difficulty or marks. `question_type` is response format; `provider_difficulty_type` remains IMS A/B/C. Keep provider `sectional_area` and `sectional_topic` separate; unavailable additional `subtopic` stays null. Additional classifications require explicit analyst provenance.
+
+Run the historical validator and `python3 scripts/validate_mock_databases.py`. The latter checks database integrity, foreign keys, IDs/counts, original score/time/outcome agreement, each newly captured question/option/answer/passage and embedded source hashes. Update the coverage index and `data/database-validation-report.json`. Do not overwrite the old recovery manifest or claim that full-content gaps are closed until fresh evidence supports that.
+
 Established during the recovery import on 17 October 2026 (Asia/Kolkata). The repository was empty: this is a new import contract, not a recovered pre-existing one.
 
 ## Layout

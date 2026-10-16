@@ -2,7 +2,7 @@
 
 Recovered CAT mock analyses, original source evidence and structured performance records for Srishti.
 
-Start with **[data/README.md](data/README.md)** for recovered files, counts, missing fields and source units. The import contains 204 question-performance records across PreSimCAT 1 2026, PreSimCAT 2 2026 and SimCAT 2 2026. Full question stems/options were not recovered.
+Start with **[data/README.md](data/README.md)** for recovered files, counts, missing fields and source units. The historical import contains 204 question-performance records across PreSimCAT 1 2026, PreSimCAT 2 2026 and SimCAT 2 2026. [Three SQLite databases](data/DATABASES.md) now overlay five freshly viewed complete questions; 199 full question texts/option sets remain unavailable after the browser connection failed.
 
 - [Immutable legacy records](data/legacy/CAT-Mock-Analysis/)
 - [Structured mock records](data/mocks/)

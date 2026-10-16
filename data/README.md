@@ -1,5 +1,7 @@
 # Recovered CAT mock records
 
+**Latest addition:** [Three SQLite databases and coverage details](DATABASES.md), one per mock, with 68 records each. All 204 include section, IMS area/topic and A/B/C type. Fresh analytics previews supplied full text/options, answers and solutions for PreSimCAT 1 VARC Q1–Q5, plus two shared passages. The other 199 full texts/options remain missing after BrowserOS became unreachable. MCQ/TITA format is confirmed only for those five. [Database validation](database-validation-report.json) is separate from the historical recovery validation below; historical JSON/legacy sources remain unchanged.
+
 Recovered on **17 October 2026, Asia/Kolkata**, by opening the existing local files. No mock records were reconstructed from memory, and the IMS portal was not revisited for this import.
 
 ## Recovery inventory

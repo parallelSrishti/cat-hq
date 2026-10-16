@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "review_date_local": "2026-10-17",
+  "timezone": "Asia/Kolkata",
+  "status": "partial",
+  "full_question_records": 5,
+  "missing_full_question_records": 199,
+  "sources": [
+    {
+      "path": "data/mocks/presimcat-1-2026/sources/full-review/VARC-q01.json",
+      "bytes": 29191,
+      "sha256": "bc1abf44079c5761eb51ef15bee22b0dd52d04945b9669f4f16c363b8f33fa00",
+      "provider_question_id": "296492",
+      "captured_at": null,
+      "capture_time_note": "Exact timestamp not retained; reviewed on 17 October 2026 Asia/Kolkata."
+    },
+    {
+      "path": "data/mocks/presimcat-1-2026/sources/full-review/VARC-q02.json",
+      "bytes": 28923,
+      "sha256": "d72ef0309a5d91d188aadc3fc2bf5d338101c455fb77b9b7b0f111af8c63075f",
+      "provider_question_id": "296493",
+      "captured_at": null,
+      "capture_time_note": "Exact timestamp not retained; reviewed on 17 October 2026 Asia/Kolkata."
+    },
+    {
+      "path": "data/mocks/presimcat-1-2026/sources/full-review/VARC-q03.json",
+      "bytes": 28885,
+      "sha256": "5fb63c31a04327d12d15bb190cc267cccf0f690562de7951c05735382cc33271",
+      "provider_question_id": "296494",
+      "captured_at": "2026-10-16T21:19:57.891Z",
+      "capture_time_note": null
+    },
+    {
+      "path": "data/mocks/presimcat-1-2026/sources/full-review/VARC-q04.json",
+      "bytes": 28867,
+      "sha256": "118f434161bf2fac1097d84b2a380b9aff758184178ad582a7076eb42a03ca55",
+      "provider_question_id": "296495",
+      "captured_at": "2026-10-16T21:20:04.906Z",
+      "capture_time_note": null
+    },
+    {
+      "path": "data/mocks/presimcat-1-2026/sources/full-review/VARC-q05.json",
+      "bytes": 17702,
+      "sha256": "3c77f47f546e381715c1564c739ef821d6c1f057d7846da3113d5f432f2417a7",
+      "provider_question_id": "85745",
+      "captured_at": "2026-10-16T21:20:11.109Z",
+      "capture_time_note": null
+    }
+  ],
+  "historical_source_manifest": "data/recovery-manifest.json",
+  "database_hashes": "data/database-validation-report.json",
+  "blocker": "BrowserOS local MCP transport unavailable at http://127.0.0.1:9000/mcp on extraction and fresh tab-list calls."
+}
