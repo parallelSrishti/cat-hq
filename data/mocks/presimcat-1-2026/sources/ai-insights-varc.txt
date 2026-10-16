@@ -1,0 +1,131 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 1 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+🧪
+
+This is the BETA version of the AI-generated insights — final update for this SIMCAT season. We'd love your feedback on which parts you found most useful and anything that could be clearer. Use the rating section below.
+
+What's new:
+Skill Meter — a visual strength map across sections, areas, and topics so you can see where you stand at a glance.
+Data Explorer — build your own charts: pick a measure, slice by section/area/topic, and compare across tests.
+×
+OVERALL
+95.74%ile
+119 marks
+IIM READINESS
+Other IIMs
+2 marks above cutoff
+Old IIMs (ABCLKI)
+2 marks above cutoff
+VARC
+97.22%ile
+57 marks
+IIM READINESS
+Other IIMs
+20 marks above cutoff
+Old IIMs (ABCLKI)
+14 marks above cutoff
+DILR
+91.49%ile
+35 marks
+IIM READINESS
+Other IIMs
+7 marks above cutoff
+Old IIMs (ABCLKI)
+3 marks above cutoff
+QA
+78.43%ile
+27 marks
+IIM READINESS
+Other IIMs
+1 marks above cutoff
+Old IIMs (ABCLKI)
+4 marks short
+Understanding Your Performance
+Other IIMs
+Old IIMs (ABCLKI)
+CURRENT POSITION
+
+You are 14 marks above the Old IIMs (ABCLKI) sectional cutoff in VARC and 3 marks above in DILR, but 4 marks below in QA. The overall Old IIMs (ABCLKI) cutoff is cleared by 2 marks.
+
+HISTORICAL PATTERN
+
+This is your first test, so historical trends are not yet established. All sections except QA have cleared their Old IIMs (ABCLKI) cutoffs in this initial attempt.
+
+View evidence
+Your immediate next goal
+Clear Old IIMs (ABCLKI) sectional cutoffs, starting with QA
+
+With QA being the only sectional cutoff missed, focused improvement here is critical to secure all Old IIMs (ABCLKI) sectional requirements.
+
+Prioritize Type A question conversion in QA, particularly in Arithmetic and Modern Math topics where significant marks were left unattempted.
+
+Section Deep Dive
+VARC
+DILR
+QA
+STRATEGY CONTEXT
+VARC is 14 marks above the Old IIMs (ABCLKI) cutoff, providing a strong foundation to maintain while addressing minor accuracy gaps.
+QUESTION SELECTION STRATEGY
+Current: Type A selection was perfect with 18/18 attempted, but 1 wrong answer left 4 marks unclaimed in Verbal Ability summaries.
+Pattern: This is the first test; no historical comparison available for VARC question selection patterns.
+Advice: Maintain full Type A coverage while reviewing summary question techniques to eliminate wrong attempts.
+View evidence
+View historical pattern
+TIME MANAGEMENT
+Current: 26.3 minutes on Type A returned 50 marks (1.9 marks per minute), while 13.5 minutes on Type B yielded 7 marks (0.52 marks per minute).
+Pattern: First test establishes baseline time efficiency metrics for VARC.
+Advice: Maintain Type A speed while improving Type B accuracy through targeted practice of inference questions.
+View evidence
+View historical pattern
+SKILL METER
+Current: Verbal Ability summaries showed 0/2 conversion in Type A/B questions despite 137 seconds spent on one attempt.
+Pattern: New misses detected in Verbal Ability summary questions across both Type A and Type B categories.
+Advice: Practice summary completion techniques with timed drills to improve accuracy.
+View evidence
+View historical pattern
+NEXT STEP
+Solve 5 daily summary questions with 90-second timers to improve pattern recognition and accuracy in this high-value Type A area.
+Next 2 tests plan
+
+Secure QA sectional cutoff through disciplined Type A conversion
+
+Practice 15 Mixtures & Alligations Type A questions daily with 90-second time limits
+Implement pre-test Type A question tagging ritual for QA section
+Review all unattempted Type A questions post-test to identify pattern recognition gaps
+
+Improved Type A conversion in QA should help clear the sectional cutoff while maintaining strengths in VARC/DILR
+
+AI-Generated Insights: This report uses AI to analyze your performance data. While we strive for accuracy, AI-generated content may occasionally contain errors or omissions. Please use these insights as guidance alongside your own judgment and mentor feedback.
+
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

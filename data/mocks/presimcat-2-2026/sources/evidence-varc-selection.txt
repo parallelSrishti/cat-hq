@@ -1,0 +1,78 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+VARC — Current Question Selection Snapshot
+ⓘ
+Section result: 41/72
+Cutoffs — Old IIMs (ABCLKI): 34 · Other IIMs: 29
+TYPE↕	AREA↕	SELECTION↕	ACCURACY↕	MARKS↕
+Type A	Verbal Ability	4/4, 100.0%	4/4, 100.0%	12/12
+Type A	Reading Comprehension	7/9, 77.8%	7/7, 100.0%	21/27
+Type A	Overall	11/13, 84.6%	11/11, 100.0%	33/39
+Type B	Verbal Ability	2/2, 100.0%	2/2, 100.0%	6/6
+Type B	Reading Comprehension	4/6, 66.7%	2/4, 50.0%	4/18
+Type B	Overall	6/8, 75.0%	4/6, 66.7%	10/24
+Type C	Verbal Ability	2/2, 100.0%	0/2, 0.0%	-2/6
+Type C	Reading Comprehension	0/1, 0.0%	0/0, —	0/3
+Type C	Overall	2/3, 66.7%	0/2, 0.0%	-2/9
+Useful insights from this table
+Type A marks left on table (by area) (1): Reading Comprehension (6 marks)
+Type B marks left on table (by area) (1): Reading Comprehension (14 marks)
+Type C marks left (by area) (2): Verbal Ability (8 marks), Reading Comprehension (3 marks)
+Type A status: 11/13 attempted • 11 correct • 6 marks left • Issue: low attempts
+Type B status: 6/8 attempted • 4 correct • 14 marks left • Issue: low attempts + low accuracy
+Type C: marks still available: 2/3 attempted • 11 unclaimed
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

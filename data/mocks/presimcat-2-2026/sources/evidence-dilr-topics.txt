@@ -1,0 +1,88 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR — Per-Question Topic Diagnostics (Current Test)
+ⓘ
+All 22 questions in Q# order. Time Ratio = your time / topper time (<1.00 = faster).
+Q#↕	AREA↕	TOPIC↕	TYPE↕	TIME TAKEN↕	TOPPER TIME↕	TIME RATIO↕	RESULT↕	MARKS↕
+1	Data Interpretation	Caselet	Type A	7:16	4:33	1.60×	Correct	3
+2	Data Interpretation	Caselet	Type A	0:04	1:14	0.05×	Correct	3
+3	Data Interpretation	Caselet	Type A	2:32	0:58	2.62×	Correct	3
+4	Data Interpretation	Caselet	Type A	0:34	0:43	0.79×	Correct	3
+5	Data Interpretation	Caselet	Type A	0:09	0:31	0.29×	Correct	3
+6	Data Interpretation	Bar Graph	Type B	5:57	5:12	1.14×	Wrong	-1
+7	Data Interpretation	Bar Graph	Type B	5:01	2:05	2.41×	Wrong	-1
+8	Data Interpretation	Bar Graph	Type B	1:05	1:19	0.82×	Correct	3
+9	Data Interpretation	Bar Graph	Type A	2:30	1:50	1.36×	Correct	3
+10	Logical Reasoning	Groupings & Arrangements	Type A	7:19	5:38	1.30×	Skipped	0
+11	Logical Reasoning	Groupings & Arrangements	Type A	0:20	0:56	0.36×	Correct	3
+12	Logical Reasoning	Groupings & Arrangements	Type A	0:02	0:40	0.05×	Correct	3
+13	Logical Reasoning	Groupings & Arrangements	Type B	1:52	1:18	1.44×	Wrong	-1
+14	Logical Reasoning	Groupings & Arrangements	Type A	0:26	0:46	0.57×	Correct	3
+15	Logical Reasoning	Groupings & Arrangements	Type B	0:07	4:17	0.03×	Skipped	0
+16	Logical Reasoning	Groupings & Arrangements	Type B	0:00	0:41	—	Skipped	0
+17	Logical Reasoning	Groupings & Arrangements	Type B	0:06	0:32	0.19×	Skipped	0
+18	Logical Reasoning	Groupings & Arrangements	Type C	0:01	0:51	0.02×	Skipped	0
+19	Logical Reasoning	Puzzles	Type C	5:01	2:52	1.75×	Skipped	0
+20	Logical Reasoning	Puzzles	Type C	0:00	1:03	—	Skipped	0
+21	Logical Reasoning	Puzzles	Type C	0:00	0:55	—	Skipped	0
+22	Logical Reasoning	Puzzles	Type C	0:00	1:02	—	Skipped	0
+Useful insights from this table
+Type A questions unconverted (1): Q10 – Groupings & Arrangements
+Topics with 2+ attempts, all missed (2): Groupings & Arrangements (4/4 lost), Puzzles (4/4 lost)
+Topics with 2+ attempts, all correct (1): Caselet (5/5)
+Slower than topper & wrong (3): Q6 (1.1×), Q7 (2.4×), Q13 (1.4×)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

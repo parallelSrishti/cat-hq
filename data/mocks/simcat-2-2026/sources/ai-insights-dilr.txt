@@ -1,0 +1,131 @@
+Srishti
+AI Insights Report
+BETA
+
+SimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+🧪
+
+This is the BETA version of the AI-generated insights — final update for this SIMCAT season. We'd love your feedback on which parts you found most useful and anything that could be clearer. Use the rating section below.
+
+What's new:
+Skill Meter — a visual strength map across sections, areas, and topics so you can see where you stand at a glance.
+Data Explorer — build your own charts: pick a measure, slice by section/area/topic, and compare across tests.
+×
+OVERALL
+78.94%ile
+71 marks
+IIM READINESS
+Other IIMs
+25 marks short
+Old IIMs (ABCLKI)
+25 marks short
+VARC
+97.36%ile
+42 marks
+IIM READINESS
+Other IIMs
+17 marks above cutoff
+Old IIMs (ABCLKI)
+12 marks above cutoff
+DILR
+16.13%ile
+15 marks
+IIM READINESS
+Other IIMs
+14 marks short
+Old IIMs (ABCLKI)
+16 marks short
+QA
+60.65%ile
+14 marks
+IIM READINESS
+Other IIMs
+5 marks short
+Old IIMs (ABCLKI)
+10 marks short
+Understanding Your Performance
+Other IIMs
+Old IIMs (ABCLKI)
+CURRENT POSITION
+
+VARC is 17 marks above the cutoff, while DILR and QA are 14 and 5 marks below their respective cutoffs. The overall score is 25 marks short of the Other IIMs overall cutoff.
+
+HISTORICAL PATTERN
+
+VARC has consistently cleared the cutoff in all recent tests, while DILR and QA have missed their cutoffs in 2 out of 3 recent attempts.
+
+View evidence
+Your immediate next goal
+Clear Other IIMs sectional cutoffs, starting with DILR
+
+With DILR and QA sectional cutoffs still unmet, securing Type A conversions in these sections is critical to achieving the Other IIMs benchmarks.
+
+Prioritize Type A question selection and accuracy in DILR and QA to close the sectional gaps.
+
+Section Deep Dive
+VARC
+DILR
+QA
+STRATEGY CONTEXT
+DILR is 14 marks below cutoff due to significant Type A selection and accuracy issues.
+QUESTION SELECTION STRATEGY
+Current: Only 56% of Type A questions attempted (5/9), with 40% accuracy leaving 24 marks unclaimed.
+Pattern: Type A selection has dropped from 75% average to 55.6% this test.
+Advice: Implement pre-test Type A identification drills for Groupings & Arrangements sets.
+View evidence
+View historical pattern
+TIME MANAGEMENT
+Current: 8.3 minutes on Type A yielded 3 marks (0.36 MPM), while 27 minutes on Type B produced 12 marks (0.44 MPM).
+Pattern: Type A time per question (55s) is below historical average but accuracy dropped sharply.
+Advice: Allocate dedicated practice time for Type A sets with 2-minute initial scan discipline.
+View evidence
+View historical pattern
+SKILL METER
+Current: Missed 3 Type A Groupings & Arrangements questions and skipped 4 others in this set type.
+Pattern: Groupings & Arrangements Type A has shown accuracy drops in 3 consecutive tests.
+Advice: Daily practice of 3 Groupings & Arrangements sets with emphasis on setup recognition.
+View evidence
+View historical pattern
+NEXT STEP
+Focus on solving at least 8 Type A questions in DILR through better set selection and structured approach to arrangement problems.
+Next 2 tests plan
+
+Secure Type A conversions in DILR through improved set selection and structured solving approach
+
+Solve 3 Groupings & Arrangements sets daily with 8-minute time limits
+Practice 10 Arithmetic Type A questions daily with formula recall drills
+Implement pre-section question tagging for Type A identification in QA
+
+Improved Type A coverage in DILR and QA leading to sectional cutoff clearance
+
+AI-Generated Insights: This report uses AI to analyze your performance data. While we strive for accuracy, AI-generated content may occasionally contain errors or omissions. Please use these insights as guidance alongside your own judgment and mentor feedback.
+
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

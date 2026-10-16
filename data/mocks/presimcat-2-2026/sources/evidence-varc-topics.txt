@@ -1,0 +1,91 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+VARC — Per-Question Topic Diagnostics (Current Test)
+ⓘ
+All 24 questions in Q# order. Time Ratio = your time / topper time (<1.00 = faster).
+Q#↕	AREA↕	TOPIC↕	TYPE↕	TIME TAKEN↕	TOPPER TIME↕	TIME RATIO↕	RESULT↕	MARKS↕
+1	Reading Comprehension	Primary Purpose	Type A	2:26	4:13	0.58×	Correct	3
+2	Reading Comprehension	Specific Detail Question	Type B	2:09	1:51	1.16×	Wrong	-1
+3	Reading Comprehension	Specific Detail Question	Type B	1:10	1:12	0.97×	Correct	3
+4	Reading Comprehension	Primary Purpose	Type C	1:22	1:17	1.06×	Skipped	0
+5	Reading Comprehension	Specific Detail Question	Type B	1:31	3:27	0.44×	Skipped	0
+6	Reading Comprehension	Specific Detail Question	Type A	0:00	0:56	—	Skipped	0
+7	Reading Comprehension	Application Question	Type A	0:00	0:58	—	Skipped	0
+8	Reading Comprehension	Inference	Type B	0:02	0:53	0.04×	Skipped	0
+9	Reading Comprehension	Inference	Type A	3:07	3:36	0.87×	Correct	3
+10	Reading Comprehension	Contextual Vocabulary	Type B	2:48	1:05	2.58×	Correct	3
+11	Reading Comprehension	Inference	Type A	0:53	0:51	1.04×	Correct	3
+12	Reading Comprehension	Inference	Type A	0:46	0:53	0.87×	Correct	3
+13	Reading Comprehension	Specific Detail Question	Type A	4:11	3:26	1.22×	Correct	3
+14	Reading Comprehension	Specific Detail Question	Type A	2:49	1:07	2.52×	Correct	3
+15	Reading Comprehension	Specific Detail Question	Type B	1:31	1:04	1.42×	Wrong	-1
+16	Reading Comprehension	Specific Detail Question	Type A	0:38	0:40	0.95×	Correct	3
+17	Verbal Ability	Jumbled Paragraphs	Type A	1:05	1:27	0.75×	Correct	3
+18	Verbal Ability	Jumbled Paragraphs	Type A	1:53	1:39	1.14×	Correct	3
+19	Verbal Ability	Sentence out of context	Type A	1:04	1:11	0.90×	Correct	3
+20	Verbal Ability	Paragraph Completion	Type B	1:37	1:30	1.08×	Correct	3
+21	Verbal Ability	Paragraph Completion	Type B	1:14	1:17	0.96×	Correct	3
+22	Verbal Ability	Sentence out of context	Type A	2:00	1:19	1.52×	Correct	3
+23	Verbal Ability	Summary	Type C	3:13	1:52	1.72×	Wrong	-1
+24	Verbal Ability	Summary	Type C	2:14	2:03	1.09×	Wrong	-1
+Useful insights from this table
+Type A questions unconverted (2): Q6 – Specific Detail Question, Q7 – Application Question
+Topics with 2+ attempts, all missed (1): Summary (2/2 lost)
+Topics with 2+ attempts, all correct (4): Inference (3/3), Jumbled Paragraphs (2/2), Sentence out of context (2/2), Paragraph Completion (2/2)
+Single Type A questions lost (1): Application Question (Type A)
+Slower than topper & wrong (4): Q2 (1.2×), Q15 (1.4×), Q23 (1.7×), Q24 (1.1×)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

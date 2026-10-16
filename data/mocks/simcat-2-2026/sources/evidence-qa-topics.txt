@@ -1,0 +1,87 @@
+Srishti
+AI Insights Report
+BETA
+
+SimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA — Per-Question Topic Diagnostics (Current Test)
+ⓘ
+All 22 questions in Q# order. Time Ratio = your time / topper time (<1.00 = faster).
+Q#↕	AREA↕	TOPIC↕	TYPE↕	TIME TAKEN↕	TOPPER TIME↕	TIME RATIO↕	RESULT↕	MARKS↕
+1	Geometry	Quadrilaterals	Type C	0:24	2:24	0.17×	Skipped	0
+2	Geometry	Mensuration	Type C	7:36	1:40	4.56×	Correct	3
+3	Numbers	Surds & Indices	Type B	11:35	2:25	4.79×	Wrong	-1
+4	Arithmetic	Profit & Loss	Type A	4:11	2:38	1.59×	Correct	3
+5	Algebra	Higher Order Polynomials	Type C	2:56	1:18	2.26×	Skipped	0
+6	Modern Math	Functions	Type B	2:47	1:14	2.26×	Correct	3
+7	Modern Math	Functions	Type A	2:01	1:16	1.59×	Correct	3
+8	Geometry	Triangles	Type A	4:20	1:50	2.36×	Correct	3
+9	Arithmetic	Mixtures & Alligations	Type B	1:15	1:54	0.66×	Skipped	0
+10	Modern Math	Sequence & Series	Type B	0:48	2:55	0.27×	Wrong	0
+11	Arithmetic	SICI	Type A	2:13	2:23	0.93×	Skipped	0
+12	Algebra	Quadratic Equations	Type B	0:00	2:04	—	Skipped	0
+13	Modern Math	Sequence & Series	Type C	0:00	1:04	—	Skipped	0
+14	Modern Math	Permutation & Combination	Type C	0:00	1:05	—	Skipped	0
+15	Arithmetic	Time-Speed-Distance	Type A	0:00	2:05	—	Skipped	0
+16	Numbers	Remainders	Type B	0:00	1:42	—	Skipped	0
+17	Arithmetic	Time and Work	Type A	0:00	2:10	—	Skipped	0
+18	Geometry	Coordinate Geometry	Type B	0:00	1:41	—	Skipped	0
+19	Algebra	Inequalities	Type B	0:00	1:22	—	Skipped	0
+20	Numbers	Factorials	Type C	0:00	1:09	—	Skipped	0
+21	Numbers	Base Systems	Type C	0:00	1:19	—	Skipped	0
+22	Arithmetic	Time-Speed-Distance	Type B	0:00	2:19	—	Skipped	0
+Useful insights from this table
+Type A questions unconverted (3): Q11 – SICI, Q15 – Time-Speed-Distance, Q17 – Time and Work
+Single Type A questions lost (3): SICI (Type A), Time-Speed-Distance (Type A), Time and Work (Type A)
+Slower than topper & wrong (1): Q3 (4.8×)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

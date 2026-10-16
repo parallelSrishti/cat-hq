@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "status": "passed",
+  "validation_scope": "This recovered original-attempt batch",
+  "source_hashes_checked": 9,
+  "source_and_record_json_files_parsed": 16,
+  "markdown_sources_preserved": 8,
+  "question_records": 204,
+  "duplicate_question_ids": 0,
+  "local_dilr_blocks": 15,
+  "reattempt_records": 0,
+  "full_question_content_records": 0,
+  "narrative_only_answer_label_pairs": 1,
+  "mocks": [
+    {
+      "mock_id": "presimcat-1-2026",
+      "record_count": 68,
+      "score": 119,
+      "mock_percentile": 95.74,
+      "sections": {
+        "VARC": {
+          "records": 24,
+          "marks": 57,
+          "attributed_time_seconds": 2390,
+          "difference_from_2400_seconds": -10
+        },
+        "DILR": {
+          "records": 22,
+          "marks": 35,
+          "attributed_time_seconds": 2407,
+          "difference_from_2400_seconds": 7
+        },
+        "QA": {
+          "records": 22,
+          "marks": 27,
+          "attributed_time_seconds": 2422,
+          "difference_from_2400_seconds": 22
+        }
+      }
+    },
+    {
+      "mock_id": "presimcat-2-2026",
+      "record_count": 68,
+      "score": 98,
+      "mock_percentile": 90.71,
+      "sections": {
+        "VARC": {
+          "records": 24,
+          "marks": 41,
+          "attributed_time_seconds": 2383,
+          "difference_from_2400_seconds": -17
+        },
+        "DILR": {
+          "records": 22,
+          "marks": 27,
+          "attributed_time_seconds": 2422,
+          "difference_from_2400_seconds": 22
+        },
+        "QA": {
+          "records": 22,
+          "marks": 30,
+          "attributed_time_seconds": 2409,
+          "difference_from_2400_seconds": 9
+        }
+      }
+    },
+    {
+      "mock_id": "simcat-2-2026",
+      "record_count": 68,
+      "score": 71,
+      "mock_percentile": 78.94,
+      "sections": {
+        "VARC": {
+          "records": 24,
+          "marks": 42,
+          "attributed_time_seconds": 2390,
+          "difference_from_2400_seconds": -10
+        },
+        "DILR": {
+          "records": 22,
+          "marks": 15,
+          "attributed_time_seconds": 2396,
+          "difference_from_2400_seconds": -4
+        },
+        "QA": {
+          "records": 22,
+          "marks": 14,
+          "attributed_time_seconds": 2406,
+          "difference_from_2400_seconds": 6
+        }
+      }
+    }
+  ],
+  "checks": [
+    "JSON syntax, duplicate object keys and finite numbers",
+    "Byte-identical source hashes and sizes",
+    "Global composite question/set IDs and section numbering",
+    "204 outcomes, marks, question times and benchmark fields against Markdown and raw captures",
+    "All nine section totals, overall totals, attempts, outcomes and accuracy",
+    "Headline provider mock percentiles; retained detailed Scorecards/Area-Wise statistics",
+    "DILR block membership, score and time sums",
+    "Null explanations and narrative-only answer exception",
+    "Index/documentation links"
+  ],
+  "caveats": [
+    "Full question text/options absent for all 204 rows; metadata recovery only.",
+    "No exact attempt dates or completed reattempts recovered.",
+    "One response/key label pair is supported by a prior analyst narrative, not a recovered screenshot.",
+    "PreSimCAT 1 separate Scorecard/Area-Wise captures absent; Markdown/AI sources support totals.",
+    "PreSimCAT 2 aggregate Question Selection capture has empty counts.",
+    "Attributed times differ slightly from nominal section duration; retained unchanged.",
+    "Original AI prose includes contradictions and is not treated as authoritative arithmetic."
+  ]
+}

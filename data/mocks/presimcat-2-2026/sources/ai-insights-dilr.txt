@@ -1,0 +1,131 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+🧪
+
+This is the BETA version of the AI-generated insights — final update for this SIMCAT season. We'd love your feedback on which parts you found most useful and anything that could be clearer. Use the rating section below.
+
+What's new:
+Skill Meter — a visual strength map across sections, areas, and topics so you can see where you stand at a glance.
+Data Explorer — build your own charts: pick a measure, slice by section/area/topic, and compare across tests.
+×
+OVERALL
+90.71%ile
+98 marks
+IIM READINESS
+Other IIMs
+11 marks short
+Old IIMs (ABCLKI)
+11 marks short
+VARC
+93.31%ile
+41 marks
+IIM READINESS
+Other IIMs
+12 marks above cutoff
+Old IIMs (ABCLKI)
+7 marks above cutoff
+DILR
+84.95%ile
+27 marks
+IIM READINESS
+Other IIMs
+4 marks above cutoff
+Old IIMs (ABCLKI)
+1 marks short
+QA
+73.39%ile
+30 marks
+IIM READINESS
+Other IIMs
+1 marks short
+Old IIMs (ABCLKI)
+7 marks short
+Understanding Your Performance
+Other IIMs
+Old IIMs (ABCLKI)
+CURRENT POSITION
+
+Your overall score is 11 marks below the Other IIMs cutoff. VARC and DILR are above their respective cutoffs by 12 and 4 marks, while QA is 1 mark short.
+
+HISTORICAL PATTERN
+
+The overall cutoff has been cleared once in the last two tests. VARC and DILR have consistently met their cutoffs, while QA has missed once and been borderline once.
+
+View evidence
+Your immediate next goal
+Close the Other IIMs overall gap, led by QA
+
+With the Other IIMs sectional cutoffs secured but the overall score short by 11 marks, disciplined Type A conversion in QA is critical to close the gap.
+
+Prioritize converting all Type A questions in QA, particularly Arithmetic and Algebra topics where marks were left unattempted.
+
+Section Deep Dive
+VARC
+DILR
+QA
+STRATEGY CONTEXT
+DILR is 4 marks above cutoff but needs Type B expansion for percentile growth.
+QUESTION SELECTION STRATEGY
+Current: Type A achieved 90% selection with perfect accuracy. Type B attempts dropped to 57.1% with 25% accuracy in LR Groupings.
+Pattern: Type B selection has decreased from 83.3% to 57.1% while accuracy fell from 80% to 25%.
+Advice: Improve Type B selection rate in Logical Reasoning sets while verifying initial assumptions.
+View evidence
+View historical pattern
+TIME MANAGEMENT
+Current: Type A delivered 1.27 marks per minute. Type B consumed 14.2 minutes with zero marks returned.
+Pattern: Type B time investment increased by 14% compared to prior average with lower accuracy.
+Advice: Set 4-minute checkpoints for Type B sets to prevent over-investment.
+View evidence
+View historical pattern
+SKILL METER
+Current: LR Groupings & Arrangements (Type B) had 3 skips and 1 wrong attempt. DI Caselets showed perfect Type A conversion.
+Pattern: LR Groupings (Type B) have appeared in both tests with recurring misses.
+Advice: Drill 3 LR Grouping sets daily with emphasis on initial setup accuracy.
+View evidence
+View historical pattern
+NEXT STEP
+Practice LR Groupings sets with strict 7-minute timers. Review first-step accuracy in 2 solved sets daily.
+Next 2 tests plan
+
+Secure all QA Type A marks while maintaining VARC/DILR performance
+
+Daily 30-minute QA Type A drills focusing on Mixtures & Alligations and Ratio-Proportions
+Implement 7-minute timers for DILR Type B sets with immediate post-attempt review
+Conduct VARC Type B practice sessions with 8-minute per passage limits
+
+Improved QA Type A conversion rate and increased overall marks through better section balance
+
+AI-Generated Insights: This report uses AI to analyze your performance data. While we strive for accuracy, AI-generated content may occasionally contain errors or omissions. Please use these insights as guidance alongside your own judgment and mentor feedback.
+
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

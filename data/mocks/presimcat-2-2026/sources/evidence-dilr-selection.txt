@@ -1,0 +1,77 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR — Current Question Selection Snapshot
+ⓘ
+Section result: 27/66
+Cutoffs — Old IIMs (ABCLKI): 28 · Other IIMs: 23
+TYPE↕	AREA↕	SELECTION↕	ACCURACY↕	MARKS↕
+Type A	Logical Reasoning	3/4, 75.0%	3/3, 100.0%	9/12
+Type A	Data Interpretation	6/6, 100.0%	6/6, 100.0%	18/18
+Type A	Overall	9/10, 90.0%	9/9, 100.0%	27/30
+Type B	Logical Reasoning	1/4, 25.0%	0/1, 0.0%	-1/12
+Type B	Data Interpretation	3/3, 100.0%	1/3, 33.3%	1/9
+Type B	Overall	4/7, 57.1%	1/4, 25.0%	0/21
+Type C	Logical Reasoning	0/5, 0.0%	0/0, —	0/15
+Type C	Overall	0/5, 0.0%	0/0, —	0/15
+Useful insights from this table
+Type A marks left on table (by area) (1): Logical Reasoning (3 marks)
+Type B marks left on table (by area) (2): Logical Reasoning (13 marks), Data Interpretation (8 marks)
+Type C marks left (by area) (1): Logical Reasoning (15 marks)
+Type A status: 9/10 attempted • 9 correct • 3 marks left • Issue: low attempts
+Type B status: 4/7 attempted • 1 correct • 21 marks left • Issue: low attempts + low accuracy
+Type C: marks still available: 0/5 attempted • 15 unclaimed
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

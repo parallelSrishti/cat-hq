@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "recovered_on": "2026-10-17",
+  "recovered_timezone": "Asia/Kolkata",
+  "method": "Opened existing local files; no records reconstructed from conversation memory or fresh portal retrieval.",
+  "markdown_files_recovered": 8,
+  "expected_previously_reported_markdown_count": 7,
+  "markdown_count_explanation": "Eight exist: seven original Markdown files plus the later 06-Weighted-Priority-Framework.md.",
+  "source_files": [
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/00-Diagnosis-and-Next-Actions.md",
+      "bytes": 14953,
+      "sha256": "77c48dfc64574b801888eab54c655ab7b39f7fd2fb0076bc71972da495df50e8"
+    },
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/01-PreSimCAT-1.md",
+      "bytes": 15042,
+      "sha256": "f2a45922eef6fd5eb30813a5cea2bc4461f9b06d50c4979fc8594afdf3e378ec"
+    },
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/02-PreSimCAT-2.md",
+      "bytes": 15102,
+      "sha256": "b579db0e6e6d368215774e79a24e34fef02ebbd7e524d98ad0ff456b25ef3ce2"
+    },
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/03-SimCAT-2.md",
+      "bytes": 15655,
+      "sha256": "7e0b8d1ff26ac93021dd8b271b2d383118fc5c82bfd32529aea5d64d2aa3ff20"
+    },
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/04-Working-Log.md",
+      "bytes": 7215,
+      "sha256": "4052c2ad179f69dd3eb0551b1c61953afd4c24a41be74ec30c1953c2898a67eb"
+    },
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/05-Question-First-Strategy.md",
+      "bytes": 13230,
+      "sha256": "738cd641f09dfbe0e94eda2e8bd8577019fbf6ac550de053bf0bd1116a2d8a81"
+    },
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/06-Weighted-Priority-Framework.md",
+      "bytes": 9074,
+      "sha256": "270563a23ae3c5ad82f9360b56027d48fa8973d54387a2598b35d41e951cc2ee"
+    },
+    {
+      "path": "data/legacy/CAT-Mock-Analysis/README.md",
+      "bytes": 3069,
+      "sha256": "2568494ebec3e646335e33c88cdbaa9316234c3a207cb1c62dfe06d3c2285ab9"
+    },
+    {
+      "path": "data/legacy/supporting/cat-mock-source.json",
+      "bytes": 197365,
+      "sha256": "a5e97c19c675031a8c07d98ca3fef14f5475e2b0dcfd6cfd6cc268f655c6f9c2"
+    }
+  ],
+  "mocks": [
+    {
+      "mock_id": "presimcat-1-2026",
+      "record_count": 68,
+      "sections": {
+        "VARC": 24,
+        "DILR": 22,
+        "QA": 22
+      },
+      "score": 119,
+      "full_question_content_count": 0,
+      "original_response_label_count": 0,
+      "correct_answer_label_count": 0
+    },
+    {
+      "mock_id": "presimcat-2-2026",
+      "record_count": 68,
+      "sections": {
+        "VARC": 24,
+        "DILR": 22,
+        "QA": 22
+      },
+      "score": 98,
+      "full_question_content_count": 0,
+      "original_response_label_count": 0,
+      "correct_answer_label_count": 0
+    },
+    {
+      "mock_id": "simcat-2-2026",
+      "record_count": 68,
+      "sections": {
+        "VARC": 24,
+        "DILR": 22,
+        "QA": 22
+      },
+      "score": 71,
+      "full_question_content_count": 0,
+      "original_response_label_count": 1,
+      "correct_answer_label_count": 1
+    }
+  ],
+  "question_records_recovered": 204,
+  "reattempt_records_recovered": 0,
+  "omitted_non_preparation_files": [
+    ".file-identities.json (Library transport metadata)",
+    "/tmp/build_cat_analysis.py (old generation script; not independent source evidence)"
+  ]
+}

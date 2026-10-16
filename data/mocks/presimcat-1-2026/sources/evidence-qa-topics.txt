@@ -1,0 +1,87 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 1 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA — Per-Question Topic Diagnostics (Current Test)
+ⓘ
+All 22 questions in Q# order. Time Ratio = your time / topper time (<1.00 = faster).
+Q#↕	AREA↕	TOPIC↕	TYPE↕	TIME TAKEN↕	TOPPER TIME↕	TIME RATIO↕	RESULT↕	MARKS↕
+1	Arithmetic	Ratio-Proportions	Type A	1:20	2:35	0.52×	Correct	3
+2	Numbers	Types of Numbers	Type A	1:10	1:34	0.74×	Correct	3
+3	Modern Math	Progressions	Type A	5:49	2:48	2.08×	Wrong	-1
+4	Arithmetic	Time-Speed-Distance	Type A	2:30	1:51	1.35×	Wrong	-1
+5	Modern Math	Sequences	Type C	1:22	1:41	0.81×	Correct	3
+6	Numbers	HCF-LCM	Type B	1:27	1:48	0.81×	Correct	3
+7	Numbers	Surds & Indices	Type C	2:35	1:51	1.40×	Correct	3
+8	Arithmetic	Ratio-Proportions	Type A	2:48	2:39	1.06×	Wrong	-1
+9	Arithmetic	Percentages	Type B	7:12	2:12	3.27×	Correct	3
+10	Algebra	Higher Order Polynomials	Type B	2:11	1:43	1.27×	Correct	3
+11	Arithmetic	Ratio-Proportions	Type A	1:43	2:21	0.73×	Correct	3
+12	Arithmetic	Mixtures & Alligations	Type A	0:11	1:27	0.13×	Skipped	0
+13	Numbers	Factors & Multiples	Type C	2:21	1:23	1.70×	Wrong	0
+14	Arithmetic	Profit & Loss	Type B	2:40	2:31	1.06×	Correct	3
+15	Geometry	Triangles	Type A	3:49	1:41	2.27×	Correct	3
+16	Geometry	Polygons	Type B	1:12	1:09	1.04×	Skipped	0
+17	Arithmetic	SICI	Type A	0:02	1:21	0.02×	Skipped	0
+18	Arithmetic	Percentages	Type B	0:00	1:59	—	Skipped	0
+19	Algebra	Higher Order Polynomials	Type C	0:00	0:59	—	Skipped	0
+20	Numbers	Factorials	Type A	0:00	0:57	—	Skipped	0
+21	Modern Math	Logarithms	Type B	0:00	0:40	—	Skipped	0
+22	Arithmetic	Time and Work	Type B	0:00	2:43	—	Skipped	0
+Useful insights from this table
+Type A questions unconverted (6): Q3 – Progressions, Q4 – Time-Speed-Distance, Q8 – Ratio-Proportions, Q12 – Mixtures & Alligations, Q17 – SICI, +1 more
+Single Type A questions lost (5): Progressions (Type A), Time-Speed-Distance (Type A), Mixtures & Alligations (Type A), SICI (Type A), Factorials (Type A)
+Slower than topper & wrong (4): Q3 (2.1×), Q4 (1.4×), Q8 (1.1×), Q13 (1.7×)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

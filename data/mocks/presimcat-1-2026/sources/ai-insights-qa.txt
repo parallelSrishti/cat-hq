@@ -1,0 +1,131 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 1 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+🧪
+
+This is the BETA version of the AI-generated insights — final update for this SIMCAT season. We'd love your feedback on which parts you found most useful and anything that could be clearer. Use the rating section below.
+
+What's new:
+Skill Meter — a visual strength map across sections, areas, and topics so you can see where you stand at a glance.
+Data Explorer — build your own charts: pick a measure, slice by section/area/topic, and compare across tests.
+×
+OVERALL
+95.74%ile
+119 marks
+IIM READINESS
+Other IIMs
+2 marks above cutoff
+Old IIMs (ABCLKI)
+2 marks above cutoff
+VARC
+97.22%ile
+57 marks
+IIM READINESS
+Other IIMs
+20 marks above cutoff
+Old IIMs (ABCLKI)
+14 marks above cutoff
+DILR
+91.49%ile
+35 marks
+IIM READINESS
+Other IIMs
+7 marks above cutoff
+Old IIMs (ABCLKI)
+3 marks above cutoff
+QA
+78.43%ile
+27 marks
+IIM READINESS
+Other IIMs
+1 marks above cutoff
+Old IIMs (ABCLKI)
+4 marks short
+Understanding Your Performance
+Other IIMs
+Old IIMs (ABCLKI)
+CURRENT POSITION
+
+You are 14 marks above the Old IIMs (ABCLKI) sectional cutoff in VARC and 3 marks above in DILR, but 4 marks below in QA. The overall Old IIMs (ABCLKI) cutoff is cleared by 2 marks.
+
+HISTORICAL PATTERN
+
+This is your first test, so historical trends are not yet established. All sections except QA have cleared their Old IIMs (ABCLKI) cutoffs in this initial attempt.
+
+View evidence
+Your immediate next goal
+Clear Old IIMs (ABCLKI) sectional cutoffs, starting with QA
+
+With QA being the only sectional cutoff missed, focused improvement here is critical to secure all Old IIMs (ABCLKI) sectional requirements.
+
+Prioritize Type A question conversion in QA, particularly in Arithmetic and Modern Math topics where significant marks were left unattempted.
+
+Section Deep Dive
+VARC
+DILR
+QA
+STRATEGY CONTEXT
+QA is 4 marks below the Old IIMs (ABCLKI) cutoff, with 21 Type A marks left unclaimed across Arithmetic and Modern Math.
+QUESTION SELECTION STRATEGY
+Current: Attempted 7/10 Type A questions but left 3 unattempted, while wrong answers cost 9 marks in key Arithmetic topics.
+Pattern: First test shows 70% Type A selection rate with 57% accuracy in QA.
+Advice: Improve both selection and accuracy of Type A questions through better difficulty calibration.
+View evidence
+View historical pattern
+TIME MANAGEMENT
+Current: 19.4 minutes on Type A returned 9 marks (0.46 marks per minute), with Modern Math Type A showing negative marks per minute.
+Pattern: First test establishes baseline metrics showing time inefficiency in Type A questions.
+Advice: Implement strict time limits (90 seconds) for initial approach attempts on Type A questions.
+View evidence
+View historical pattern
+SKILL METER
+Current: 6 Type A questions unattempted or wrong across Progressions, Time-Speed-Distance, and Mixtures & Alligations.
+Pattern: New misses detected in multiple Arithmetic and Modern Math Type A topics.
+Advice: Drill fundamental concepts in Progressions and Mixtures through targeted practice sets.
+View evidence
+View historical pattern
+NEXT STEP
+Solve 10 daily Type A Arithmetic problems with step-by-step accuracy checks, focusing on Mixtures and Time-Speed-Distance concepts.
+Next 2 tests plan
+
+Secure QA sectional cutoff through disciplined Type A conversion
+
+Practice 15 Mixtures & Alligations Type A questions daily with 90-second time limits
+Implement pre-test Type A question tagging ritual for QA section
+Review all unattempted Type A questions post-test to identify pattern recognition gaps
+
+Improved Type A conversion in QA should help clear the sectional cutoff while maintaining strengths in VARC/DILR
+
+AI-Generated Insights: This report uses AI to analyze your performance data. While we strive for accuracy, AI-generated content may occasionally contain errors or omissions. Please use these insights as guidance alongside your own judgment and mentor feedback.
+
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

@@ -1,0 +1,88 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 1 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR — Per-Question Topic Diagnostics (Current Test)
+ⓘ
+All 22 questions in Q# order. Time Ratio = your time / topper time (<1.00 = faster).
+Q#↕	AREA↕	TOPIC↕	TYPE↕	TIME TAKEN↕	TOPPER TIME↕	TIME RATIO↕	RESULT↕	MARKS↕
+1	Data Interpretation	Caselet	Type C	8:22	4:11	2.00×	Wrong	-1
+2	Data Interpretation	Caselet	Type B	0:13	0:54	0.24×	Correct	3
+3	Data Interpretation	Caselet	Type C	0:51	0:36	1.42×	Correct	3
+4	Data Interpretation	Caselet	Type C	0:13	0:17	0.76×	Correct	3
+5	Data Interpretation	Caselet	Type B	0:44	0:24	1.83×	Correct	3
+6	Data Interpretation	Scatter Plot	Type A	2:32	4:46	0.53×	Correct	3
+7	Data Interpretation	Scatter Plot	Type B	2:25	1:42	1.42×	Correct	3
+8	Data Interpretation	Scatter Plot	Type A	2:23	1:19	1.81×	Correct	3
+9	Data Interpretation	Scatter Plot	Type A	3:01	1:56	1.56×	Correct	3
+10	Data Interpretation	Scatter Plot	Type A	1:25	1:39	0.86×	Correct	3
+11	Logical Reasoning	Groupings & Arrangements	Type A	0:06	3:23	0.03×	Skipped	0
+12	Logical Reasoning	Groupings & Arrangements	Type A	0:08	1:35	0.08×	Skipped	0
+13	Logical Reasoning	Groupings & Arrangements	Type A	0:01	1:15	0.01×	Skipped	0
+14	Logical Reasoning	Groupings & Arrangements	Type A	0:00	1:02	—	Skipped	0
+15	Logical Reasoning	Groupings & Arrangements	Type B	4:00	4:00	1.00×	Wrong	0
+16	Logical Reasoning	Groupings & Arrangements	Type A	2:14	1:13	1.84×	Correct	3
+17	Logical Reasoning	Groupings & Arrangements	Type B	0:39	1:16	0.51×	Correct	3
+18	Logical Reasoning	Groupings & Arrangements	Type A	0:53	1:43	0.51×	Correct	3
+19	Data Interpretation	Geometrical Diagrams	Type C	9:47	4:18	2.28×	Skipped	0
+20	Data Interpretation	Geometrical Diagrams	Type B	0:04	0:46	0.09×	Skipped	0
+21	Data Interpretation	Geometrical Diagrams	Type C	0:05	0:34	0.15×	Skipped	0
+22	Data Interpretation	Geometrical Diagrams	Type C	0:01	1:03	0.02×	Skipped	0
+Useful insights from this table
+Type A questions unconverted (4): Q11 – Groupings & Arrangements, Q12 – Groupings & Arrangements, Q13 – Groupings & Arrangements, Q14 – Groupings & Arrangements
+Topics with 2+ attempts, all missed (1): Geometrical Diagrams (3/3 lost)
+Topics with 2+ attempts, all correct (2): Caselet (2/2), Scatter Plot (4/4)
+Slower than topper & wrong (1): Q1 (2.0×)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

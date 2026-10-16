@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "mock_id": "presimcat-1-2026",
+  "name": "PreSimCAT 1 2026",
+  "provider": "IMS",
+  "attempt": {
+    "id": "presimcat-1-2026:original",
+    "kind": "original",
+    "sequence": 1,
+    "attempt_date": null,
+    "timezone": null,
+    "started_at": null,
+    "completed_at": null,
+    "provider_attempt_id": null,
+    "actual_elapsed_seconds": null,
+    "reviewed_on": "2026-10-16",
+    "reviewed_timezone": "Asia/Kolkata",
+    "null_explanations": {
+      "attempt_date": "The recovered reports explicitly say the attempt date is unknown; review date is not attempt date.",
+      "timezone": "Attempt timezone was not recorded.",
+      "started_at": "No start timestamp recovered.",
+      "completed_at": "No completion timestamp recovered.",
+      "provider_attempt_id": "No verified provider attempt identifier recovered; URL assessment IDs identify tests, not attempts.",
+      "actual_elapsed_seconds": "Only attributed per-question times and, for two tests, rounded provider area durations were recovered."
+    }
+  },
+  "overall": {
+    "score": 119,
+    "provider_percentile": 95.74,
+    "statistics": {
+      "question_count": 68,
+      "attempted": 52,
+      "correct": 42,
+      "incorrect": 10,
+      "skipped": 16,
+      "accuracy_percent": 80.77
+    },
+    "attributed_question_time_seconds": 7219,
+    "provider_area_statistics": null
+  },
+  "sections": {
+    "VARC": {
+      "score": 57,
+      "provider_percentile": 97.22,
+      "statistics": {
+        "question_count": 24,
+        "attempted": 24,
+        "correct": 20,
+        "incorrect": 4,
+        "skipped": 0,
+        "accuracy_percent": 83.33
+      },
+      "attributed_question_time_seconds": 2390,
+      "provider_area_statistics": null,
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/01-PreSimCAT-1.md",
+        "markdown_line": 9
+      }
+    },
+    "DILR": {
+      "score": 35,
+      "provider_percentile": 91.49,
+      "statistics": {
+        "question_count": 22,
+        "attempted": 14,
+        "correct": 12,
+        "incorrect": 2,
+        "skipped": 8,
+        "accuracy_percent": 85.71
+      },
+      "attributed_question_time_seconds": 2407,
+      "provider_area_statistics": null,
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/01-PreSimCAT-1.md",
+        "markdown_line": 10
+      }
+    },
+    "QA": {
+      "score": 27,
+      "provider_percentile": 78.43,
+      "statistics": {
+        "question_count": 22,
+        "attempted": 14,
+        "correct": 10,
+        "incorrect": 4,
+        "skipped": 8,
+        "accuracy_percent": 71.43
+      },
+      "attributed_question_time_seconds": 2422,
+      "provider_area_statistics": null,
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/01-PreSimCAT-1.md",
+        "markdown_line": 11
+      }
+    }
+  },
+  "provider_estimates": {
+    "predicted_cat_percentile": 98.98,
+    "note": "Separate IMS prediction, not the mock percentile or a validated CAT result."
+  },
+  "conditions": {
+    "exam_conditions": "Reported by user in the recovered analyst records.",
+    "chronology": "Mocks spread over months; ordering by test name does not establish attempt-date order."
+  },
+  "source_urls": {
+    "detailed_analytics": "https://myimsv3.imsindia.com/test/Detailed%20Analytics/PreSimCAT%201%202026?assetId=12195&assessmentId=3977",
+    "ai_insights": "https://ai-insights.beta.imsindia.com/report-v2"
+  },
+  "missing_fields": {
+    "provider_area_statistics": "The original PreSimCAT 1 Scorecard/Area-Wise text captures were not retained in the recovered JSON; Markdown summary and AI evidence remain.",
+    "reattempts": "No later reattempt records recovered; none were fabricated."
+  }
+}

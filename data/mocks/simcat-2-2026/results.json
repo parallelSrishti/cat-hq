@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "mock_id": "simcat-2-2026",
+  "name": "SimCAT 2 2026",
+  "provider": "IMS",
+  "attempt": {
+    "id": "simcat-2-2026:original",
+    "kind": "original",
+    "sequence": 1,
+    "attempt_date": null,
+    "timezone": null,
+    "started_at": null,
+    "completed_at": null,
+    "provider_attempt_id": null,
+    "actual_elapsed_seconds": null,
+    "reviewed_on": "2026-10-16",
+    "reviewed_timezone": "Asia/Kolkata",
+    "null_explanations": {
+      "attempt_date": "The recovered reports explicitly say the attempt date is unknown; review date is not attempt date.",
+      "timezone": "Attempt timezone was not recorded.",
+      "started_at": "No start timestamp recovered.",
+      "completed_at": "No completion timestamp recovered.",
+      "provider_attempt_id": "No verified provider attempt identifier recovered; URL assessment IDs identify tests, not attempts.",
+      "actual_elapsed_seconds": "Only attributed per-question times and, for two tests, rounded provider area durations were recovered."
+    }
+  },
+  "overall": {
+    "score": 71,
+    "provider_percentile": 78.94,
+    "statistics": {
+      "question_count": 68,
+      "attempted": 35,
+      "correct": 26,
+      "incorrect": 9,
+      "skipped": 33,
+      "accuracy_percent": 74.29
+    },
+    "attributed_question_time_seconds": 7192,
+    "provider_area_statistics": {
+      "score": 71,
+      "question_count": 68,
+      "attempted": 35,
+      "correct": 26,
+      "accuracy_percent": 74.29,
+      "time_spent_hh_mm": "02:00",
+      "marks_per_minute": 0.59,
+      "time_per_attempted_question_mm_ss": "03:26"
+    }
+  },
+  "sections": {
+    "VARC": {
+      "score": 42,
+      "provider_percentile": 97.36,
+      "statistics": {
+        "question_count": 24,
+        "attempted": 19,
+        "correct": 15,
+        "incorrect": 4,
+        "skipped": 5,
+        "accuracy_percent": 78.95
+      },
+      "attributed_question_time_seconds": 2390,
+      "provider_area_statistics": {
+        "score": 42,
+        "question_count": 24,
+        "attempted": 19,
+        "correct": 15,
+        "accuracy_percent": 78.95,
+        "time_spent_hh_mm": "00:39",
+        "marks_per_minute": 1.05,
+        "time_per_attempted_question_mm_ss": "02:06"
+      },
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/03-SimCAT-2.md",
+        "markdown_line": 9
+      }
+    },
+    "DILR": {
+      "score": 15,
+      "provider_percentile": 16.13,
+      "statistics": {
+        "question_count": 22,
+        "attempted": 9,
+        "correct": 6,
+        "incorrect": 3,
+        "skipped": 13,
+        "accuracy_percent": 66.67
+      },
+      "attributed_question_time_seconds": 2396,
+      "provider_area_statistics": {
+        "score": 15,
+        "question_count": 22,
+        "attempted": 9,
+        "correct": 6,
+        "accuracy_percent": 66.67,
+        "time_spent_hh_mm": "00:40",
+        "marks_per_minute": 0.37,
+        "time_per_attempted_question_mm_ss": "04:27"
+      },
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/03-SimCAT-2.md",
+        "markdown_line": 10
+      }
+    },
+    "QA": {
+      "score": 14,
+      "provider_percentile": 60.65,
+      "statistics": {
+        "question_count": 22,
+        "attempted": 7,
+        "correct": 5,
+        "incorrect": 2,
+        "skipped": 15,
+        "accuracy_percent": 71.43
+      },
+      "attributed_question_time_seconds": 2406,
+      "provider_area_statistics": {
+        "score": 14,
+        "question_count": 22,
+        "attempted": 7,
+        "correct": 5,
+        "accuracy_percent": 71.43,
+        "time_spent_hh_mm": "00:40",
+        "marks_per_minute": 0.35,
+        "time_per_attempted_question_mm_ss": "05:45"
+      },
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/03-SimCAT-2.md",
+        "markdown_line": 11
+      }
+    }
+  },
+  "provider_estimates": {
+    "predicted_cat_percentile": 94.83,
+    "note": "Separate IMS prediction, not the mock percentile or a validated CAT result."
+  },
+  "conditions": {
+    "exam_conditions": "Reported by user in the recovered analyst records.",
+    "chronology": "Mocks spread over months; ordering by test name does not establish attempt-date order."
+  },
+  "source_urls": {
+    "detailed_analytics": "https://myimsv3.imsindia.com/test/Detailed%20Analytics/SimCAT%202%202026?assetId=12652&assessmentId=4300",
+    "ai_insights": "https://ai-insights.beta.imsindia.com/report-v2"
+  },
+  "missing_fields": {
+    "provider_area_statistics": null,
+    "reattempts": "No later reattempt records recovered; none were fabricated."
+  }
+}

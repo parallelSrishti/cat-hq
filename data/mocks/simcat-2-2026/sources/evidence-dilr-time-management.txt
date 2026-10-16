@@ -1,0 +1,70 @@
+Srishti
+AI Insights Report
+BETA
+
+SimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR — Time Management
+ⓘ
+Area × Type efficiency for current test. MPM = marks ÷ minutes invested.
+AREA↕	TYPE↕	QUESTIONS↕	TIME INVESTED↕	MARKS↕	MPM↕
+Data Interpretation	Type B	4	27.0 min	12	0.4
+Data Interpretation	Type C	5	0.1 min	0	0.0
+Logical Reasoning	Type A	9	8.3 min	3	0.4
+Logical Reasoning	Type C	4	4.5 min	0	0.0
+Useful insights from this table
+Areas where time earned marks (2): Data Interpretation Type B (12 marks in 27 min), Logical Reasoning Type A (3 marks in 8.3 min)
+Largest time area with no marks returned: Logical Reasoning Type C — 4.5 min, 0 marks
+Area where you spent the most time: Data Interpretation Type B — 27 min → 12 marks
+Time spent with no marks (2)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

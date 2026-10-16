@@ -1,0 +1,131 @@
+Srishti
+AI Insights Report
+BETA
+
+SimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+🧪
+
+This is the BETA version of the AI-generated insights — final update for this SIMCAT season. We'd love your feedback on which parts you found most useful and anything that could be clearer. Use the rating section below.
+
+What's new:
+Skill Meter — a visual strength map across sections, areas, and topics so you can see where you stand at a glance.
+Data Explorer — build your own charts: pick a measure, slice by section/area/topic, and compare across tests.
+×
+OVERALL
+78.94%ile
+71 marks
+IIM READINESS
+Other IIMs
+25 marks short
+Old IIMs (ABCLKI)
+25 marks short
+VARC
+97.36%ile
+42 marks
+IIM READINESS
+Other IIMs
+17 marks above cutoff
+Old IIMs (ABCLKI)
+12 marks above cutoff
+DILR
+16.13%ile
+15 marks
+IIM READINESS
+Other IIMs
+14 marks short
+Old IIMs (ABCLKI)
+16 marks short
+QA
+60.65%ile
+14 marks
+IIM READINESS
+Other IIMs
+5 marks short
+Old IIMs (ABCLKI)
+10 marks short
+Understanding Your Performance
+Other IIMs
+Old IIMs (ABCLKI)
+CURRENT POSITION
+
+VARC is 17 marks above the cutoff, while DILR and QA are 14 and 5 marks below their respective cutoffs. The overall score is 25 marks short of the Other IIMs overall cutoff.
+
+HISTORICAL PATTERN
+
+VARC has consistently cleared the cutoff in all recent tests, while DILR and QA have missed their cutoffs in 2 out of 3 recent attempts.
+
+View evidence
+Your immediate next goal
+Clear Other IIMs sectional cutoffs, starting with DILR
+
+With DILR and QA sectional cutoffs still unmet, securing Type A conversions in these sections is critical to achieving the Other IIMs benchmarks.
+
+Prioritize Type A question selection and accuracy in DILR and QA to close the sectional gaps.
+
+Section Deep Dive
+VARC
+DILR
+QA
+STRATEGY CONTEXT
+VARC is securely above cutoff, allowing focus on maintaining efficiency and accuracy.
+QUESTION SELECTION STRATEGY
+Current: All Type A questions were attempted with 90% accuracy, leaving 4 marks unclaimed due to one wrong answer.
+Pattern: Type A selection has remained at 100% across the last 3 tests with accuracy consistently above 90%.
+Advice: Maintain Type A focus while practicing time management on RC Inference questions.
+View evidence
+View historical pattern
+TIME MANAGEMENT
+Current: 19 minutes spent on Type A returned 26 marks at 1.37 marks per minute. Type B questions yielded 11 marks in 15.9 minutes (0.69 MPM).
+Pattern: Type A time per question (114s) remains stable compared to prior tests.
+Advice: Reallocate time from lower-yield Type B questions to maintain VARC efficiency.
+View evidence
+View historical pattern
+SKILL METER
+Current: Missed 1 Type A Contextual Vocabulary question while converting all other Type A RC questions.
+Pattern: Type B Summary questions have been skipped in 2 consecutive tests.
+Advice: Review contextual vocabulary strategies through daily practice of 5 questions.
+View evidence
+View historical pattern
+NEXT STEP
+Continue perfecting Type A recognition through timed RC practice sets, focusing on maintaining 90%+ accuracy.
+Next 2 tests plan
+
+Secure Type A conversions in DILR through improved set selection and structured solving approach
+
+Solve 3 Groupings & Arrangements sets daily with 8-minute time limits
+Practice 10 Arithmetic Type A questions daily with formula recall drills
+Implement pre-section question tagging for Type A identification in QA
+
+Improved Type A coverage in DILR and QA leading to sectional cutoff clearance
+
+AI-Generated Insights: This report uses AI to analyze your performance data. While we strive for accuracy, AI-generated content may occasionally contain errors or omissions. Please use these insights as guidance alongside your own judgment and mentor feedback.
+
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

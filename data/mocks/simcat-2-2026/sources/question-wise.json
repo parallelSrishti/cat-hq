@@ -1,0 +1,954 @@
+[
+  {
+    "cells": [
+      "VARC",
+      "1.\n\n“One striking pattern was the",
+      "",
+      "04:03",
+      "05:03",
+      "91.6",
+      "92.36",
+      "84.60",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "2.\n\nAll of the following claims",
+      "",
+      "01:44",
+      "01:32",
+      "84.4",
+      "36.02",
+      "30.40",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "3.\n\nWhich one of the following",
+      "",
+      "00:30",
+      "01:04",
+      "82.2",
+      "16.55",
+      "13.60",
+      "C"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "4.\n\n“For decades, their bizarre body",
+      "",
+      "00:57",
+      "01:05",
+      "87.6",
+      "88.36",
+      "77.40",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "5.\n\nWhich one of the following",
+      "",
+      "06:06",
+      "03:31",
+      "65.8",
+      "54.41",
+      "35.80",
+      "B"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "6.\n\nThe difference between mathematical proof",
+      "",
+      "00:41",
+      "00:47",
+      "73.6",
+      "92.66",
+      "68.20",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "7.\n\nAll of the following statements",
+      "",
+      "00:23",
+      "00:37",
+      "66.8",
+      "95.81",
+      "64.00",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "8.\n\nWhich one of the following",
+      "",
+      "00:52",
+      "00:45",
+      "67.4",
+      "84.27",
+      "56.80",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "9.\n\nAccording to the passage, AI-generated",
+      "",
+      "04:32",
+      "03:44",
+      "90.2",
+      "92.68",
+      "83.60",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "10.\n\nThe third paragraph of the",
+      "",
+      "01:28",
+      "01:19",
+      "86.2",
+      "77.49",
+      "66.80",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "11.\n\n“Despite these advances, most scientists",
+      "",
+      "01:16",
+      "01:07",
+      "85.8",
+      "76.69",
+      "65.80",
+      "A"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "12.\n\nAssuming that the authorship of",
+      "",
+      "00:41",
+      "01:01",
+      "84.4",
+      "81.75",
+      "69.00",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "13.\n\nThe passage given below is",
+      "",
+      "00:27",
+      "02:06",
+      "83.0",
+      "65.3",
+      "54.20",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "14.\n\nThe four sentences (labelled 1,",
+      "",
+      "02:10",
+      "01:38",
+      "90.2",
+      "28.82",
+      "26.00",
+      "C"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "15.\n\nThe given sentence is missing",
+      "",
+      "02:11",
+      "01:41",
+      "74.6",
+      "31.64",
+      "23.60",
+      "C"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "16.\n\nFive jumbled sentences (labelled 1,",
+      "",
+      "02:47",
+      "01:27",
+      "89.0",
+      "38.2",
+      "34.00",
+      "B"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "17.\n\nThe passage given below is",
+      "",
+      "00:42",
+      "01:27",
+      "66.2",
+      "90.33",
+      "59.80",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "18.\n\nAccording to the passage, LUCA",
+      "",
+      "03:23",
+      "02:43",
+      "73.0",
+      "90.14",
+      "65.80",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "19.\n\nWhat role does the discussion",
+      "",
+      "00:11",
+      "01:00",
+      "66.0",
+      "69.7",
+      "46.00",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "20.\n\nMartin’s claim that the 355",
+      "",
+      "00:01",
+      "00:49",
+      "63.8",
+      "75.86",
+      "48.40",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "21.\n\nWhich of the following inferences",
+      "",
+      "00:03",
+      "00:53",
+      "61.8",
+      "92.56",
+      "57.20",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "22.\n\nThe four sentences (labelled 1,",
+      "",
+      "01:33",
+      "01:48",
+      "84.0",
+      "37.14",
+      "31.20",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "23.\n\nThe given sentence is missing",
+      "",
+      "01:34",
+      "01:17",
+      "79.2",
+      "41.67",
+      "33.00",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "VARC",
+      "24.\n\nFive jumbled sentences (labelled 1,",
+      "",
+      "01:35",
+      "01:21",
+      "87.8",
+      "82.46",
+      "72.40",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "1.\n\nWhich two instructors have saxophones",
+      "",
+      "06:58",
+      "06:04",
+      "99.0",
+      "97.17",
+      "96.20",
+      "A"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "2.\n\nWhich instructor manages Room E?",
+      "",
+      "00:12",
+      "00:28",
+      "99.4",
+      "99.2",
+      "98.60",
+      "A"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "3.\n\nWhich instruments are in the",
+      "",
+      "00:05",
+      "00:35",
+      "99.2",
+      "98.59",
+      "97.80",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "4.\n\nWhich two rooms have the",
+      "",
+      "00:17",
+      "00:25",
+      "99.0",
+      "99.39",
+      "98.40",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "5.\n\nWhat is the pair of",
+      "",
+      "00:48",
+      "00:42",
+      "98.4",
+      "93.09",
+      "91.60",
+      "A"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "6.\n\nWhat is the ratio of",
+      "",
+      "19:09",
+      "07:09",
+      "52.6",
+      "92.02",
+      "48.40",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "7.\n\nIf Gamma’s total raw material",
+      "",
+      "02:46",
+      "01:28",
+      "36.4",
+      "85.16",
+      "31.00",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "8.\n\nIf the total weight of",
+      "",
+      "04:28",
+      "00:56",
+      "56.0",
+      "70.71",
+      "39.60",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "9.\n\nWhich plant utilizes the highest",
+      "",
+      "00:36",
+      "01:02",
+      "55.8",
+      "81.72",
+      "45.60",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "10.\n\nConsider the following numbers: 135.5,",
+      "",
+      "03:19",
+      "04:09",
+      "31.8",
+      "72.33",
+      "23.00",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "11.\n\nWhat can be said about",
+      "",
+      "00:54",
+      "00:57",
+      "28.2",
+      "84.4",
+      "23.80",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "12.\n\nIf A = Maximum possible",
+      "",
+      "00:17",
+      "00:43",
+      "32.8",
+      "46.34",
+      "15.20",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "13.\n\nWhat is the sum of",
+      "",
+      "00:03",
+      "00:45",
+      "36.4",
+      "52.75",
+      "19.20",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "14.\n\nHow many students enrolled in",
+      "",
+      "00:04",
+      "03:03",
+      "34.2",
+      "34.5",
+      "11.80",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "15.\n\nAmong the ‘original students’ who",
+      "",
+      "00:00",
+      "00:37",
+      "13.6",
+      "58.82",
+      "8.00",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "16.\n\nAmong the students of class",
+      "",
+      "00:00",
+      "00:32",
+      "15.0",
+      "85.33",
+      "12.80",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "17.\n\nThe number of girls initially",
+      "",
+      "00:00",
+      "00:26",
+      "23.0",
+      "33.91",
+      "7.80",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "18.\n\nIn the academic session of",
+      "",
+      "00:00",
+      "00:35",
+      "21.8",
+      "16.51",
+      "3.60",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "19.\n\nWhich of the following groups",
+      "",
+      "00:00",
+      "04:02",
+      "98.2",
+      "97.96",
+      "96.20",
+      "A"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "20.\n\nWhich of the following players",
+      "",
+      "00:00",
+      "01:48",
+      "98.4",
+      "95.73",
+      "94.20",
+      "A"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "21.\n\nIf Supriya is selected in",
+      "",
+      "00:00",
+      "01:40",
+      "97.6",
+      "95.08",
+      "92.80",
+      "A"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "DILR",
+      "22.\n\nIf Sunita is already selected,",
+      "",
+      "00:00",
+      "01:50",
+      "97.4",
+      "95.07",
+      "92.60",
+      "A"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "1.\n\nABCD is a rhombus (AC",
+      "",
+      "00:24",
+      "02:24",
+      "25.6",
+      "80.47",
+      "20.60",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "2.\n\nA solid sphere has radius",
+      "",
+      "07:36",
+      "01:40",
+      "36.8",
+      "58.7",
+      "21.60",
+      "C"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "3.\n\nEvaluate",
+      "",
+      "11:35",
+      "02:25",
+      "51.8",
+      "78.38",
+      "40.60",
+      "B"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "4.\n\nA shopkeeper offers a \"Buy",
+      "",
+      "04:11",
+      "02:38",
+      "88.6",
+      "96.16",
+      "85.20",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "5.\n\nIf",
+      "",
+      "02:56",
+      "01:18",
+      "30.6",
+      "83.01",
+      "25.40",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "6.\n\nIf f(x) = max{|x −",
+      "",
+      "02:47",
+      "01:14",
+      "61.8",
+      "82.52",
+      "51.00",
+      "B"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "7.\n\nLet",
+      "",
+      "02:01",
+      "01:16",
+      "72.4",
+      "98.07",
+      "71.00",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "8.\n\nA landscape architect is designing",
+      "",
+      "04:20",
+      "01:50",
+      "63.4",
+      "96.85",
+      "61.40",
+      "A"
+    ],
+    "status": "/static/media/tickCircle-active.c71c2fdb.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "9.\n\nThe maximum volume of liquid",
+      "",
+      "01:15",
+      "01:54",
+      "51.6",
+      "66.28",
+      "34.20",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "10.\n\nThe largest term common to",
+      "",
+      "00:48",
+      "02:55",
+      "78.6",
+      "69.21",
+      "54.40",
+      "B"
+    ],
+    "status": "/static/media/cancel-icon-rounded.f443c690.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "11.\n\nElena deposits 17,000 from this",
+      "",
+      "02:13",
+      "02:23",
+      "72.4",
+      "95.3",
+      "69.00",
+      "A"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "12.\n\nHow many integer values of",
+      "",
+      "00:00",
+      "02:04",
+      "60.0",
+      "79.67",
+      "47.80",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "13.\n\nIf 'P'",
+      "",
+      "00:00",
+      "01:04",
+      "24.2",
+      "82.64",
+      "20.00",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "14.\n\nHow many paths are there",
+      "",
+      "00:00",
+      "01:05",
+      "39.2",
+      "60.71",
+      "23.80",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "15.\n\nTwo cars, a faster car",
+      "",
+      "00:00",
+      "02:05",
+      "83.2",
+      "94.47",
+      "78.60",
+      "A"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "16.\n\nThe last two digits of",
+      "",
+      "00:00",
+      "01:42",
+      "73.6",
+      "61.96",
+      "45.60",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "17.\n\nFour software developers Alice, Bob,",
+      "",
+      "00:00",
+      "02:10",
+      "86.4",
+      "88.19",
+      "76.20",
+      "A"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "18.\n\nThe coordinates of the vertices",
+      "",
+      "00:00",
+      "01:41",
+      "43.6",
+      "93.12",
+      "40.60",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "19.\n\nLet ‘x’ and ‘y’ be",
+      "",
+      "00:00",
+      "01:22",
+      "57.4",
+      "90.24",
+      "51.80",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "20.\n\nIf",
+      "",
+      "00:00",
+      "01:09",
+      "28.4",
+      "78.87",
+      "22.40",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "21.\n\nOn an alien planet, numbers",
+      "",
+      "00:00",
+      "01:19",
+      "41.2",
+      "68.45",
+      "28.20",
+      "C"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  },
+  {
+    "cells": [
+      "QA",
+      "22.\n\nThree remote control cars Red,",
+      "",
+      "00:00",
+      "02:19",
+      "68.0",
+      "86.76",
+      "59.00",
+      "B"
+    ],
+    "status": "/static/media/incorrect-answer.a3a58ee2.svg"
+  }
+]

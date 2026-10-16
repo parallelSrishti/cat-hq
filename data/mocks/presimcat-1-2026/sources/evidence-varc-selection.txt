@@ -1,0 +1,75 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 1 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+VARC — Current Question Selection Snapshot
+ⓘ
+Section result: 57/72
+Cutoffs — Old IIMs (ABCLKI): 43 · Other IIMs: 37
+TYPE↕	AREA↕	SELECTION↕	ACCURACY↕	MARKS↕
+Type A	Verbal Ability	5/5, 100.0%	4/5, 80.0%	11/15
+Type A	Reading Comprehension	13/13, 100.0%	13/13, 100.0%	39/39
+Type A	Overall	18/18, 100.0%	17/18, 94.4%	50/54
+Type B	Verbal Ability	3/3, 100.0%	1/3, 33.3%	2/9
+Type B	Reading Comprehension	3/3, 100.0%	2/3, 66.7%	5/9
+Type B	Overall	6/6, 100.0%	3/6, 50.0%	7/18
+Type C	Overall	0/0, 0.0%	0/0, —	0/0
+Useful insights from this table
+Type A marks left on table (by area) (1): Verbal Ability (4 marks)
+Type B marks left on table (by area) (2): Verbal Ability (7 marks), Reading Comprehension (4 marks)
+Type A status: 18/18 attempted • 17 correct • 4 marks left • Issue: low accuracy
+Type B status: 6/6 attempted • 3 correct • 11 marks left • Issue: low accuracy
+Type C: marks still available: 0/0 attempted
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

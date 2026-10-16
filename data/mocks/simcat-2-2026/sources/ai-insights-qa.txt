@@ -1,0 +1,131 @@
+Srishti
+AI Insights Report
+BETA
+
+SimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+🧪
+
+This is the BETA version of the AI-generated insights — final update for this SIMCAT season. We'd love your feedback on which parts you found most useful and anything that could be clearer. Use the rating section below.
+
+What's new:
+Skill Meter — a visual strength map across sections, areas, and topics so you can see where you stand at a glance.
+Data Explorer — build your own charts: pick a measure, slice by section/area/topic, and compare across tests.
+×
+OVERALL
+78.94%ile
+71 marks
+IIM READINESS
+Other IIMs
+25 marks short
+Old IIMs (ABCLKI)
+25 marks short
+VARC
+97.36%ile
+42 marks
+IIM READINESS
+Other IIMs
+17 marks above cutoff
+Old IIMs (ABCLKI)
+12 marks above cutoff
+DILR
+16.13%ile
+15 marks
+IIM READINESS
+Other IIMs
+14 marks short
+Old IIMs (ABCLKI)
+16 marks short
+QA
+60.65%ile
+14 marks
+IIM READINESS
+Other IIMs
+5 marks short
+Old IIMs (ABCLKI)
+10 marks short
+Understanding Your Performance
+Other IIMs
+Old IIMs (ABCLKI)
+CURRENT POSITION
+
+VARC is 17 marks above the cutoff, while DILR and QA are 14 and 5 marks below their respective cutoffs. The overall score is 25 marks short of the Other IIMs overall cutoff.
+
+HISTORICAL PATTERN
+
+VARC has consistently cleared the cutoff in all recent tests, while DILR and QA have missed their cutoffs in 2 out of 3 recent attempts.
+
+View evidence
+Your immediate next goal
+Clear Other IIMs sectional cutoffs, starting with DILR
+
+With DILR and QA sectional cutoffs still unmet, securing Type A conversions in these sections is critical to achieving the Other IIMs benchmarks.
+
+Prioritize Type A question selection and accuracy in DILR and QA to close the sectional gaps.
+
+Section Deep Dive
+VARC
+DILR
+QA
+STRATEGY CONTEXT
+QA is 5 marks below cutoff with significant Type A selection gaps.
+QUESTION SELECTION STRATEGY
+Current: 50% Type A selection rate (3/6 attempted) left 9 marks unclaimed despite perfect accuracy on attempts.
+Pattern: Type A selection has dropped from 67.2% average to 50% this test.
+Advice: Implement question triage protocol to identify all Type A Arithmetic questions first.
+View evidence
+View historical pattern
+TIME MANAGEMENT
+Current: 12.7 minutes on Type A returned 9 marks (0.71 MPM), while 16.5 minutes on Type B yielded -1 marks due to wrong attempts.
+Pattern: Type B time per question (165s) exceeds historical averages with negative returns.
+Advice: Strictly avoid Type B Number questions showing negative marks per minute.
+View evidence
+View historical pattern
+SKILL METER
+Current: Skipped 3 Type A questions in SICI, Time-Speed-Distance, and Time & Work despite available marks.
+Pattern: SICI Type A has been skipped in all 3 recent tests.
+Advice: Drill core Arithmetic formulas through 10 daily SICI and Time problems.
+View evidence
+View historical pattern
+NEXT STEP
+Increase Type A attempt rate to 80% by prioritizing Arithmetic questions first in QA section.
+Next 2 tests plan
+
+Secure Type A conversions in DILR through improved set selection and structured solving approach
+
+Solve 3 Groupings & Arrangements sets daily with 8-minute time limits
+Practice 10 Arithmetic Type A questions daily with formula recall drills
+Implement pre-section question tagging for Type A identification in QA
+
+Improved Type A coverage in DILR and QA leading to sectional cutoff clearance
+
+AI-Generated Insights: This report uses AI to analyze your performance data. While we strive for accuracy, AI-generated content may occasionally contain errors or omissions. Please use these insights as guidance alongside your own judgment and mentor feedback.
+
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

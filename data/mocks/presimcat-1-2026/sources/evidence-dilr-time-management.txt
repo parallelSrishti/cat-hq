@@ -1,0 +1,69 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 1 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR — Time Management
+ⓘ
+Area × Type efficiency for current test. MPM = marks ÷ minutes invested.
+AREA↕	TYPE↕	QUESTIONS↕	TIME INVESTED↕	MARKS↕	MPM↕
+Data Interpretation	Type A	4	9.3 min	12	1.3
+Data Interpretation	Type B	4	3.4 min	9	2.6
+Data Interpretation	Type C	6	19.3 min	5	0.3
+Logical Reasoning	Type A	6	3.4 min	6	1.8
+Logical Reasoning	Type B	2	4.7 min	3	0.6
+Useful insights from this table
+Areas where time earned marks (5): Data Interpretation Type A (12 marks in 9.3 min), Data Interpretation Type B (9 marks in 3.4 min), Data Interpretation Type C (5 marks in 19.3 min), Logical Reasoning Type A (6 marks in 3.4 min), Logical Reasoning Type B (3 marks in 4.7 min)
+Area where you spent the most time: Data Interpretation Type C — 19.3 min → 5 marks
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

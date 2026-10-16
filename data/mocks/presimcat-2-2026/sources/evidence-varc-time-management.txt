@@ -1,0 +1,73 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+VARC — Time Management
+ⓘ
+Area × Type efficiency for current test. MPM = marks ÷ minutes invested.
+AREA↕	TYPE↕	QUESTIONS↕	TIME INVESTED↕	MARKS↕	MPM↕
+Reading Comprehension	Type A	9	14.8 min	21	1.4
+Reading Comprehension	Type B	6	9.2 min	4	0.4
+Reading Comprehension	Type C	1	1.4 min	0	0.0
+Verbal Ability	Type A	4	6.0 min	12	2.0
+Verbal Ability	Type B	2	2.9 min	6	2.1
+Verbal Ability	Type C	2	5.5 min	-2	-0.4
+Useful insights from this table
+Areas where time earned marks (4): Reading Comprehension Type A (21 marks in 14.8 min), Reading Comprehension Type B (4 marks in 9.2 min), Verbal Ability Type A (12 marks in 6 min), Verbal Ability Type B (6 marks in 2.9 min)
+Largest time area with no marks returned: Reading Comprehension Type C — 1.4 min, 0 marks
+Area where you spent the most time: Reading Comprehension Type A — 14.8 min → 21 marks
+Time spent with no marks (1)
+Time that cost marks (1)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

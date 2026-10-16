@@ -1,0 +1,79 @@
+Srishti
+AI Insights Report
+BETA
+
+SimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA — Time Management
+ⓘ
+Area × Type efficiency for current test. MPM = marks ÷ minutes invested.
+AREA↕	TYPE↕	QUESTIONS↕	TIME INVESTED↕	MARKS↕	MPM↕
+Algebra	Type B	2	0.0 min	0	—
+Algebra	Type C	1	2.9 min	0	0.0
+Arithmetic	Type A	4	6.4 min	3	0.5
+Arithmetic	Type B	2	1.3 min	0	0.0
+Geometry	Type A	1	4.3 min	3	0.7
+Geometry	Type B	1	0.0 min	0	—
+Geometry	Type C	2	8.0 min	3	0.4
+Modern Math	Type A	1	2.0 min	3	1.5
+Modern Math	Type B	2	3.6 min	3	0.8
+Modern Math	Type C	2	0.0 min	0	—
+Numbers	Type B	2	11.6 min	-1	-0.1
+Numbers	Type C	2	0.0 min	0	—
+Useful insights from this table
+Areas where time earned marks (5): Arithmetic Type A (3 marks in 6.4 min), Geometry Type A (3 marks in 4.3 min), Geometry Type C (3 marks in 8 min), Modern Math Type A (3 marks in 2 min), Modern Math Type B (3 marks in 3.6 min)
+Largest time area with no marks returned: Algebra Type C — 2.9 min, 0 marks
+Area where you spent the most time: Numbers Type B — 11.6 min → -1 marks
+Time spent with no marks (2)
+Time that cost marks (1)
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

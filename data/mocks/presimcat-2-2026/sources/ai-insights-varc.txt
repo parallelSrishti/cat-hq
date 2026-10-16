@@ -1,0 +1,131 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 2 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+🧪
+
+This is the BETA version of the AI-generated insights — final update for this SIMCAT season. We'd love your feedback on which parts you found most useful and anything that could be clearer. Use the rating section below.
+
+What's new:
+Skill Meter — a visual strength map across sections, areas, and topics so you can see where you stand at a glance.
+Data Explorer — build your own charts: pick a measure, slice by section/area/topic, and compare across tests.
+×
+OVERALL
+90.71%ile
+98 marks
+IIM READINESS
+Other IIMs
+11 marks short
+Old IIMs (ABCLKI)
+11 marks short
+VARC
+93.31%ile
+41 marks
+IIM READINESS
+Other IIMs
+12 marks above cutoff
+Old IIMs (ABCLKI)
+7 marks above cutoff
+DILR
+84.95%ile
+27 marks
+IIM READINESS
+Other IIMs
+4 marks above cutoff
+Old IIMs (ABCLKI)
+1 marks short
+QA
+73.39%ile
+30 marks
+IIM READINESS
+Other IIMs
+1 marks short
+Old IIMs (ABCLKI)
+7 marks short
+Understanding Your Performance
+Other IIMs
+Old IIMs (ABCLKI)
+CURRENT POSITION
+
+Your overall score is 11 marks below the Other IIMs cutoff. VARC and DILR are above their respective cutoffs by 12 and 4 marks, while QA is 1 mark short.
+
+HISTORICAL PATTERN
+
+The overall cutoff has been cleared once in the last two tests. VARC and DILR have consistently met their cutoffs, while QA has missed once and been borderline once.
+
+View evidence
+Your immediate next goal
+Close the Other IIMs overall gap, led by QA
+
+With the Other IIMs sectional cutoffs secured but the overall score short by 11 marks, disciplined Type A conversion in QA is critical to close the gap.
+
+Prioritize converting all Type A questions in QA, particularly Arithmetic and Algebra topics where marks were left unattempted.
+
+Section Deep Dive
+VARC
+DILR
+QA
+STRATEGY CONTEXT
+VARC is 12 marks above the cutoff, providing a strong base but needing Type B efficiency to maximize percentile.
+QUESTION SELECTION STRATEGY
+Current: Type A selection was strong with 85% attempted and perfect accuracy. Type B left 14 marks unattempted or wrong, mainly in RC Specific Detail Questions.
+Pattern: Type B selection has dropped from 100% to 75% compared to prior tests, with accuracy improving from 50% to 66.7%.
+Advice: Increase Type B attempts in RC Specific Detail Questions while maintaining Type A accuracy.
+View evidence
+View historical pattern
+TIME MANAGEMENT
+Current: Type A returned 1.59 marks per minute, while Type B yielded 0.83. 6.9 minutes on Type C resulted in negative marks.
+Pattern: Type B marks per minute (0.83) are below the historical average of 0.4.
+Advice: Reallocate time from Type C to Type B questions to improve efficiency.
+View evidence
+View historical pattern
+SKILL METER
+Current: Missed 2 Type A questions in RC Application and Specific Detail, while showing strength in RC Inference and VA Paragraph Completion.
+Pattern: RC Specific Detail Questions (Type B) have been missed in both recent tests.
+Advice: Practice RC Application Questions through timed sets to improve recognition.
+View evidence
+View historical pattern
+NEXT STEP
+Tag all RC questions by type before attempting. Focus practice on Type B Specific Detail Questions with 8-minute time limits per set.
+Next 2 tests plan
+
+Secure all QA Type A marks while maintaining VARC/DILR performance
+
+Daily 30-minute QA Type A drills focusing on Mixtures & Alligations and Ratio-Proportions
+Implement 7-minute timers for DILR Type B sets with immediate post-attempt review
+Conduct VARC Type B practice sessions with 8-minute per passage limits
+
+Improved QA Type A conversion rate and increased overall marks through better section balance
+
+AI-Generated Insights: This report uses AI to analyze your performance data. While we strive for accuracy, AI-generated content may occasionally contain errors or omissions. Please use these insights as guidance alongside your own judgment and mentor feedback.
+
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

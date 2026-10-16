@@ -1,0 +1,84 @@
+Srishti
+AI Insights Report
+BETA
+
+PreSimCAT 1 2026
+
+AI Insights
+Evidence Tables
+Skill Meter
+Data Explorer
+Evidence Library
+Understanding Your Performance
+VARC Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+DILR Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA Evidence
+Current Qn. Selection
+Qn. Selection History
+Time Management Current
+Time Management History
+Topic Current
+Topic History
+QA — Current Question Selection Snapshot
+ⓘ
+Section result: 27/66
+Cutoffs — Old IIMs (ABCLKI): 31 · Other IIMs: 26
+TYPE↕	AREA↕	SELECTION↕	ACCURACY↕	MARKS↕
+Type A	Arithmetic	4/6, 66.7%	2/4, 50.0%	4/18
+Type A	Modern Math	1/1, 100.0%	0/1, 0.0%	-1/3
+Type A	Numbers	1/2, 50.0%	1/1, 100.0%	3/6
+Type A	Geometry	1/1, 100.0%	1/1, 100.0%	3/3
+Type A	Overall	7/10, 70.0%	4/7, 57.1%	9/30
+Type B	Arithmetic	2/4, 50.0%	2/2, 100.0%	6/12
+Type B	Modern Math	0/1, 0.0%	0/0, —	0/3
+Type B	Numbers	1/1, 100.0%	1/1, 100.0%	3/3
+Type B	Algebra	1/1, 100.0%	1/1, 100.0%	3/3
+Type B	Geometry	0/1, 0.0%	0/0, —	0/3
+Type B	Overall	4/8, 50.0%	4/4, 100.0%	12/24
+Type C	Modern Math	1/1, 100.0%	1/1, 100.0%	3/3
+Type C	Numbers	2/2, 100.0%	1/2, 50.0%	3/6
+Type C	Algebra	0/1, 0.0%	0/0, —	0/3
+Type C	Overall	3/4, 75.0%	2/3, 66.7%	6/12
+Useful insights from this table
+Type A marks left on table (by area) (3): Arithmetic (14 marks), Modern Math (4 marks), Numbers (3 marks)
+Type B marks left on table (by area) (3): Arithmetic (6 marks), Modern Math (3 marks), Geometry (3 marks)
+Type C marks left (by area) (2): Numbers (3 marks), Algebra (3 marks)
+Type A status: 7/10 attempted • 4 correct • 21 marks left • Issue: low attempts + low accuracy
+Type B status: 4/8 attempted • 4 correct • 12 marks left • Issue: low attempts
+Type C: marks still available: 3/4 attempted • 6 unclaimed
+Rate This Beta Report
+
+Was this report useful? Found anything unclear or incorrect? Please tell us.
+
+☆
+☆
+☆
+☆
+☆
+
+Tap to rate
+
+Helpdesk
+|
+FAQs
+|
+Privacy Policy
+|
+Terms of Use
+|
+Disclaimer
+Follow us on
+
+© 2026 IMS Learning Resources Pvt. Ltd. All rights reserved.

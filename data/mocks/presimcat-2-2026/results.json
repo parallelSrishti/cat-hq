@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "mock_id": "presimcat-2-2026",
+  "name": "PreSimCAT 2 2026",
+  "provider": "IMS",
+  "attempt": {
+    "id": "presimcat-2-2026:original",
+    "kind": "original",
+    "sequence": 1,
+    "attempt_date": null,
+    "timezone": null,
+    "started_at": null,
+    "completed_at": null,
+    "provider_attempt_id": null,
+    "actual_elapsed_seconds": null,
+    "reviewed_on": "2026-10-16",
+    "reviewed_timezone": "Asia/Kolkata",
+    "null_explanations": {
+      "attempt_date": "The recovered reports explicitly say the attempt date is unknown; review date is not attempt date.",
+      "timezone": "Attempt timezone was not recorded.",
+      "started_at": "No start timestamp recovered.",
+      "completed_at": "No completion timestamp recovered.",
+      "provider_attempt_id": "No verified provider attempt identifier recovered; URL assessment IDs identify tests, not attempts.",
+      "actual_elapsed_seconds": "Only attributed per-question times and, for two tests, rounded provider area durations were recovered."
+    }
+  },
+  "overall": {
+    "score": 98,
+    "provider_percentile": 90.71,
+    "statistics": {
+      "question_count": 68,
+      "attempted": 44,
+      "correct": 35,
+      "incorrect": 9,
+      "skipped": 24,
+      "accuracy_percent": 79.55
+    },
+    "attributed_question_time_seconds": 7214,
+    "provider_area_statistics": {
+      "score": 98,
+      "question_count": 68,
+      "attempted": 44,
+      "correct": 35,
+      "accuracy_percent": 79.55,
+      "time_spent_hh_mm": "02:00",
+      "marks_per_minute": 0.81,
+      "time_per_attempted_question_mm_ss": "02:45"
+    }
+  },
+  "sections": {
+    "VARC": {
+      "score": 41,
+      "provider_percentile": 93.31,
+      "statistics": {
+        "question_count": 24,
+        "attempted": 19,
+        "correct": 15,
+        "incorrect": 4,
+        "skipped": 5,
+        "accuracy_percent": 78.95
+      },
+      "attributed_question_time_seconds": 2383,
+      "provider_area_statistics": {
+        "score": 41,
+        "question_count": 24,
+        "attempted": 19,
+        "correct": 15,
+        "accuracy_percent": 78.95,
+        "time_spent_hh_mm": "00:39",
+        "marks_per_minute": 1.03,
+        "time_per_attempted_question_mm_ss": "02:06"
+      },
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/02-PreSimCAT-2.md",
+        "markdown_line": 9
+      }
+    },
+    "DILR": {
+      "score": 27,
+      "provider_percentile": 84.95,
+      "statistics": {
+        "question_count": 22,
+        "attempted": 13,
+        "correct": 10,
+        "incorrect": 3,
+        "skipped": 9,
+        "accuracy_percent": 76.92
+      },
+      "attributed_question_time_seconds": 2422,
+      "provider_area_statistics": {
+        "score": 27,
+        "question_count": 22,
+        "attempted": 13,
+        "correct": 10,
+        "accuracy_percent": 76.92,
+        "time_spent_hh_mm": "00:40",
+        "marks_per_minute": 0.67,
+        "time_per_attempted_question_mm_ss": "03:07"
+      },
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/02-PreSimCAT-2.md",
+        "markdown_line": 10
+      }
+    },
+    "QA": {
+      "score": 30,
+      "provider_percentile": 73.39,
+      "statistics": {
+        "question_count": 22,
+        "attempted": 12,
+        "correct": 10,
+        "incorrect": 2,
+        "skipped": 10,
+        "accuracy_percent": 83.33
+      },
+      "attributed_question_time_seconds": 2409,
+      "provider_area_statistics": {
+        "score": 30,
+        "question_count": 22,
+        "attempted": 12,
+        "correct": 10,
+        "accuracy_percent": 83.33,
+        "time_spent_hh_mm": "00:40",
+        "marks_per_minute": 0.75,
+        "time_per_attempted_question_mm_ss": "03:21"
+      },
+      "source": {
+        "markdown_path": "data/legacy/CAT-Mock-Analysis/02-PreSimCAT-2.md",
+        "markdown_line": 11
+      }
+    }
+  },
+  "provider_estimates": {
+    "predicted_cat_percentile": 97.81,
+    "note": "Separate IMS prediction, not the mock percentile or a validated CAT result."
+  },
+  "conditions": {
+    "exam_conditions": "Reported by user in the recovered analyst records.",
+    "chronology": "Mocks spread over months; ordering by test name does not establish attempt-date order."
+  },
+  "source_urls": {
+    "detailed_analytics": "https://myimsv3.imsindia.com/test/Detailed%20Analytics/PreSimCAT%202%202026?assetId=12197&assessmentId=4124",
+    "ai_insights": "https://ai-insights.beta.imsindia.com/report-v2"
+  },
+  "missing_fields": {
+    "provider_area_statistics": null,
+    "reattempts": "No later reattempt records recovered; none were fabricated."
+  }
+}
