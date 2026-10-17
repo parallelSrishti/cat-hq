@@ -1,3 +1,13 @@
+# Evolving SQLite question databases
+
+The latest three files were uploaded by the user on 17 October 2026. All 204 original IDs have renderable question views; 194 have nonempty plain text (some mathematics is embedded as images), and all 204 contain answer values and solution views. The user says extraction is still being updated. Availability is not an independent completeness certification. See [the uploaded snapshot manifest](uploaded-databases-manifest.json) and [current validation](database-validation-report.json).
+
+The app uses the `question_details` view read-only, overlays content on the original IDs, preserves embedded math/media, and does not duplicate original attempts. Source captures are gzip-compressed inside the databases; validation checks their decompressed hashes and embedded media hashes. Replace a snapshot with an updated one at the same path, validate, and sync Git to update another clone. Stop the app while replacing a database manually, or atomically rename the completed file.
+
+The legacy partial-database builder is now guarded to prevent overwriting these newer uploads. Original recovery JSON and legacy source files remain unchanged.
+
+## Earlier first extraction (historical, superseded coverage)
+
 # Mock SQLite databases — partial full-content extraction
 
 Each file contains **68 original-attempt question records**. These are resumable exports, not completed full question banks. Browser access failed during extraction on 17 October 2026 (Asia/Kolkata).

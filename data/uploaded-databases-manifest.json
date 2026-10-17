@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.1",
+  "received_on": "2026-10-17",
+  "status": "user-supplied evolving question databases; completeness not asserted",
+  "databases": [
+    {
+      "path": "data/mocks/presimcat-2-2026/presimcat-2-2026.db",
+      "bytes": 8458240,
+      "sha256": "4ea945d1ca9cfe459f85c8e90a6dd3ff0501560eb2403880a353e0da66011bc2",
+      "uploaded_filename": "presimcat-2-2026.db"
+    },
+    {
+      "path": "data/mocks/simcat-2-2026/simcat-2-2026.db",
+      "bytes": 6868992,
+      "sha256": "a796a3e2e0516810cdcf8cac0d28eb394b8848e0319162c754237e2348aa58ac",
+      "uploaded_filename": "simcat-2-2026.db"
+    },
+    {
+      "path": "data/mocks/presimcat-1-2026/presimcat-1-2026.db",
+      "bytes": 8519680,
+      "sha256": "6e040e3c502a0e6a0f2f6c5226afb8128bf77015c9882f03dd7efa3eb4063e26",
+      "uploaded_filename": "presimcat-1-2026.db"
+    }
+  ]
+}

@@ -222,6 +222,8 @@ def build(directory):
 
 
 if __name__ == '__main__':
+    if (ROOT/'data/uploaded-databases-manifest.json').exists():
+        raise SystemExit('Newer user-supplied question databases are present. This legacy builder must not overwrite them. Import updated .db snapshots instead.')
     for folder in sorted((ROOT/'data/mocks').iterdir()):
         if folder.is_dir():
             path = build(folder)

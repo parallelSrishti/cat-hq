@@ -3,7 +3,7 @@
   "status": "passed",
   "validation_scope": "This recovered original-attempt batch",
   "source_hashes_checked": 9,
-  "source_and_record_json_files_parsed": 23,
+  "source_and_record_json_files_parsed": 28,
   "markdown_sources_preserved": 8,
   "question_records": 204,
   "duplicate_question_ids": 0,

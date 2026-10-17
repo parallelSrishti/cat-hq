@@ -1,5 +1,7 @@
 # Recovered CAT mock records
 
+**Current question content:** The user supplied newer evolving SQLite snapshots after the first five-question export. The local HQ currently reads question views, keys and solutions for all 204 original IDs. Some questions are image-based; extraction remains marked in progress. This supplements, and does not rewrite, the historical metadata recovery below. See [current database coverage](DATABASES.md).
+
 **Latest addition:** [Three SQLite databases and coverage details](DATABASES.md), one per mock, with 68 records each. All 204 include section, IMS area/topic and A/B/C type. Fresh analytics previews supplied full text/options, answers and solutions for PreSimCAT 1 VARC Q1–Q5, plus two shared passages. The other 199 full texts/options remain missing after BrowserOS became unreachable. MCQ/TITA format is confirmed only for those five. [Database validation](database-validation-report.json) is separate from the historical recovery validation below; historical JSON/legacy sources remain unchanged.
 
 Recovered on **17 October 2026, Asia/Kolkata**, by opening the existing local files. No mock records were reconstructed from memory, and the IMS portal was not revisited for this import.
@@ -68,3 +70,7 @@ AI prose has documented arithmetic/history inconsistencies. Examples include Sim
 Run `python3 scripts/validate_records.py` from the repository root. See [validation-report.json](validation-report.json) for the resulting checks and caveats. Source checksums are in [recovery-manifest.json](recovery-manifest.json). The importer is reproducible from preserved files with `python3 scripts/import_legacy_records.py --from-recovered-legacy`; it is only for this historical recovery and must not overwrite later work.
 
 Future analyses use this same repository/layout and [contract](../docs/ANALYSIS-CONTRACT.md): preserve sources first, keep original attempts and reattempts separate, update this index and validation, commit and push using existing authentication. No unattended analysis, application build or deployment is configured.
+
+## Local HQ application (17 October 2026)
+
+The user subsequently authorized a local dashboard and adaptive planner. See [the finalized plan](../docs/PLAN.md) and [root run instructions](../README.md). The 63 imported reference missions are pending learner work, not completed sessions; no logging XP is awarded. Application records and imports follow contract extension 1.1. Existing legacy captures and the recovered original-attempt batch remain unchanged.

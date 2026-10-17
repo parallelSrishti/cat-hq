@@ -1,0 +1,19 @@
+{
+  "schema_version":"1.1",
+  "name":"Srishti",
+  "timezone":"Asia/Calcutta",
+  "targetPercentile":99,
+  "sectionFloor":90,
+  "baselineMockId":"simcat-2-2026",
+  "planStart":"2026-10-16",
+  "planHorizon":"2026-11-28",
+  "examDate":null,
+  "dailyMinutes":null,
+  "nonMockAllocation":{"DILR":55,"QA":45},
+  "qaAllocation":{"Arithmetic":45,"Algebra":30,"Geometry":12,"Number Systems":8,"Modern Math":5},
+  "dilrAllocation":{"Grouping / conditionality":30,"Hybrid / reasoning DI":30,"Games / tournaments":20,"Routes / scheduling":10,"Rotating families":10},
+  "mockPenaltyPoints":1,
+  "autoSync":true,
+  "reminderHour":20,
+  "note":"Uploaded reference schedule is provisional. No exact exam date or prior mock dates are assumed; no arbitrary daily time ceiling. Videos always require a 5–10 question assessment."
+}

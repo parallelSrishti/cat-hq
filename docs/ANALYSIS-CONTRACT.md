@@ -78,3 +78,38 @@ Run `python3 scripts/validate_records.py` before committing. It checks all JSON 
 The legacy importer is reproducible with `python3 scripts/import_legacy_records.py --from-recovered-legacy`. It regenerates this recovery dataset from preserved evidence only. Do not use it to overwrite later analyses or import future attempts. Future analyses follow this contract directly and extend validation as needed.
 
 Fetch/pull before editing. Commit and push preparation data after each analysis using existing authentication and ordinary fast-forward behavior. If the remote moves, integrate its changes and revalidate; do not force-push. Verify the pushed SHA. No dashboard deployment is part of this workflow.
+
+## Application extension 1.1 — authorized 17 October 2026
+
+The local HQ is now authorized; references above saying application work was outside the earlier recovery task describe that earlier scope. The original schema 1.0 recovery files remain unchanged.
+
+### Shared records
+
+- `data/profile.json`: targets, selected baseline, optional workload capacity, timezone and auto-sync preference. `examDate` stays null until verified.
+- `data/planning/reference-tasks.json`: tasks derived from the preserved uploaded plan. Original due dates and the source hash remain recorded.
+- `data/tasks/<id>.json`: assigned/adaptive tasks. Required fields: id, title, section (`QA`, `DILR`, `VARC`, `ALL`), type (`questions`, `repair`, `review`, `video`, `sectional`, `mock`), due date, minutes, xp, stage and questionIds. An external task has requiresFresh/requiredFreshCount and is completed using source-referenced outcomes. Video tasks require a specific videoUrl and 5–10 unique fresh content-bank question IDs.
+- `data/question-bank/<hash-or-id>.json`: content overlays or new unseen questions. Use the exact original composite ID to add full text to a recovered question. Original questions remain familiar regardless of an overlay's fresh flag. New questions need stable, non-path IDs, section, topic, question_text, optional passage, options (string array), answer (string/number), explanation, fresh and source_url. MCQ keys use A/B/C/D; numeric keys use the number. Do not expose a reconstructed answer as a recovered key.
+- `data/sessions/<uuid>.json`: versioned learner sessions with original task reference, active timing, question focus, responses, grading provenance (`key`, `self-report`, `ungraded`), external outcomes, learner report and completion state. Do not hand-edit active sessions while the app is running. Self-reports are not independently verified mastery.
+- `data/events/<uuid>.json`: immutable completion, reschedule, retirement, video-step and import events.
+- `data/plan-revisions/<uuid>.json`: immutable snapshots with reasons, priorities, topic states and recommended IDs.
+
+### HTTP import
+
+The localhost server accepts JSON with the `X-HQ-Request: 1` header. Cross-origin writes are rejected. Use the Records UI or:
+
+- `POST /api/import` with `{ "kind": "questions", "questions": [ ...content objects... ] }`.
+- `POST /api/import` with `{ "kind": "mock", "results": {...schema 1.0 results...}, "questions": {...schema 1.0 question collection...}, "analysis": "Markdown analysis" }`.
+
+A new mock ID is required; existing originals cannot be overwritten through import. The collection's question_count, question IDs, section marks, total score, dates and percentiles are validated. Preserve full source reports in the mock sources directory using the repository workflow. Reattempts remain in their separate original contract directory, not another copy of the original.
+
+For direct repository updates, preserve the same field semantics and run both validators. On a clean local startup/sync, new tracked records are read automatically without rebuilding the application. Add a dated new mock with provider CAT prediction when available; exact dates are required for recency weighting. Practice never changes original mock percentiles.
+
+### Auto-sync boundaries
+
+Only preparation paths are staged automatically. Application changes, unrelated staged files, diverged history and remote updates alongside uncommitted local edits stop sync. Resolve with ordinary Git; never force-push. The app verifies the remote branch SHA before displaying Synced. `.runtime/`, credentials, dependencies and build output are not shared.
+
+### Evolving uploaded SQLite snapshots
+
+The user supplied updated databases after the first extraction. `question_details` now exposes `display_html`, `solution_display_html`, ordered option JSON and embedded media; `source_captures` stores gzip content with original byte lengths/hashes. The app reads these files directly, never rewrites them at runtime, and overlays content on the same original IDs. It uses `correct_response_option_label` or the numeric `correct_response` for grading. Images/math are rendered from sanitized display HTML. Keys and explanations are withheld from practice until an answer is saved.
+
+Keep updated snapshots at `data/mocks/<mock-id>/<mock-id>.db`, use an atomic replacement or stop the app while copying, validate with `scripts/validate_mock_databases.py`, then commit/push. Do not run the guarded legacy builder to replace newer tables. The 204 available views are not a declaration that extraction is complete; the user will confirm completion. Node SQLite is bundled with the documented runtime.

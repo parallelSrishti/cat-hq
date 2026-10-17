@@ -1,2 +1,10 @@
+node_modules/
+dist/
+.runtime/
+*.tmp
+.env
+.env.*
+*.log
+.DS_Store
 __pycache__/
 *.pyc
