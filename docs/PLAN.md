@@ -12,13 +12,13 @@ Where the reference differs from the user's explicit requirements, the requireme
 
 ## Product
 
-- Ubuntu-inspired charcoal/grey interface, muted white text and restrained orange accents; responsive navigation and accessible form labels.
-- Home: evidence-labelled provisional percentile, section check-in, Today/Missed/Upcoming/Completed task board, XP/streaks and unresolved-work scenarios.
-- QA, DILR, VARC: sectional data, topic performance, marks/time plots, urgent repair evidence, explicit next missions and preparation allocation.
-- Repair lab: topic heatmap, cold-attempt → targeted repair → fresh transfer → delayed retest gates.
-- Mock history: full original analyses, question-level drill-downs, outcome charts, dated trends only when dates exist, plan revision and session history.
+- Ubuntu-inspired charcoal/grey interface, muted white text and steel accents. Colour is reserved for chart/graph data; responsive navigation and accessible form labels.
+- Home: all-mock consolidated, evidence-labelled provisional percentile, section check-in, Today/Missed/Upcoming/Completed task board, XP/streaks and unresolved-work scenarios.
+- QA, DILR, VARC: all-mock sectional means and pooled accuracy, dated trend charts, descriptive dip analysis, tier → family → topic breakdown, urgent repairs and explicit next missions. Per-attempt details and preparation allocation remain in a collapsed inspector.
+- Repair lab: consolidated topic map, cold-attempt → targeted repair → fresh transfer → delayed retest gates.
+- Trends & dips: scalable all/latest-10/latest-5 observation windows, raw and rolling percentile series, written analysis and dip markers. A collapsed searchable archive shows ten individual attempts per page, preserving full analyses and question drill-downs. Plan revision and session history remain available.
 - Records: JSON import of complete question content or future mock packages, plus portable backup export.
-- Settings: baseline selection, optional capacity, verified exam date, sync and notification controls.
+- Settings: individual-review starting mock, optional capacity, verified exam date, sync and notification controls.
 
 Every chart has source context, sample counts in its drill-down and a written interpretation. Missing values remain unknown. Cohort mock percentiles are separated from IMS CAT predictions and historical score scenarios.
 
@@ -32,11 +32,13 @@ Fresh QA target: ≥80% before speed pressure. DILR reliability: two fully corre
 
 ## Percentile and accountability model
 
-The initial overall number is IMS's 94.83 CAT prediction for the explicitly selected SimCAT 2 baseline, not a fresh independently fitted estimate. The mock cohort result is 78.94. Unknown dates prevent a recency average. New dated provider CAT estimates feed a recency-weighted mean of the latest five dated estimates. If the latest dated mock has no CAT prediction, the app labels a mock-cohort proxy rather than manufacturing a CAT prediction.
+The consolidated overall estimate is the equal-weight mean of **all available original full-mock provider CAT predictions**, including undated attempts. It has no latest-five cutoff and is unaffected by the individual-review selector. For the three recovered mocks this is 97.21 (98.98, 97.81 and 94.83). This is a provisional descriptive aggregate, not an independently calibrated CAT 2026 forecast. Display the contributing count and keep cohort percentiles separate. If no provider predictions exist, show the all-mock cohort mean explicitly as a proxy. Section pages show sectional **mock-cohort means**, not manufactured CAT forecasts. Missing values are excluded and coverage shown. The observed range is not a confidence interval.
+
+Trend chronology uses exact attempt dates; same-date mocks form one daily mean. An optional globally unique positive `attempt.chronological_order` may be used only when every original full mock has an analyst-verified order. Per-mock `attempt.sequence`, names, import order and review dates never establish chronology. Undated mocks always remain in consolidated summaries even when excluded from the timeline. The rolling series uses up to five observations (daily means when dates tie). Direction compares the latest five observations against the preceding five using a ±2 percentile-point band. A descriptive dip is at least five points and two prior-window standard deviations below the preceding 3–5 observations. Show rule/sample coverage and section-score movements without claiming causes or adding sectional percentile changes.
 
 Historical IMS 2023–25 overall and sectional anchor curves support scenario interpolation only within their published 80–99 percentile range. They do not establish the effect of a missed study session. No extrapolated precision is supplied outside that range. Baseline equivalent scores are obtained by inverting each year's curve separately. Lost marks are subtracted on that same curve; years are not mixed into a single score scale. This still assumes comparable-scale marks and is labelled a stress scenario.
 
-User-chosen fallback: a missed topic task assumes all 3 marks per topic question are unavailable; a missed sectional uses its currently highest-priority unresolved topic; a missed full mock carries a one-percentile-point accountability penalty. Topic exposure uses the selected paper's question counts, with observed-average counts only when absent. Broad area weights are not assigned to a single subtopic. Shared topic exposure is counted once and reminders do not repeat-charge the same task. The performance estimate is not overwritten with these penalties.
+User-chosen fallback: a missed topic task assumes all 3 marks per topic question are unavailable; a missed sectional uses its currently highest-priority unresolved topic; a missed full mock carries a one-percentile-point accountability penalty. Topic exposure uses average question counts across all original full mocks, including zeros when a topic is absent. Broad area weights are not assigned to a single subtopic. Shared topic exposure is counted once and reminders do not repeat-charge the same task. The performance estimate is not overwritten with these penalties.
 
 Sources and limitations: [IMS historical score tables](https://www.imsindia.com/blog/cat/cat-score-vs-percentile/). Source tables and method are in `app/lib/percentile.mjs`. Historical spread is not a confidence interval. Same-mock cohort distributions can replace this fallback if later imported.
 
@@ -59,3 +61,11 @@ Run application tests (adaptive rules, timers, session concurrency, video gates,
 ## Updated user-supplied question tables
 
 After implementation began, the user supplied three newer SQLite snapshots. All 204 existing IDs now have question views and answer values; some mathematical content is image-based, so plain-text counts are smaller. The app reads the tables directly with Node SQLite in read-only mode, caches by file timestamp and size, sanitizes rich HTML/math, and shows only embedded images. Original JSON facts and legacy sources remain unchanged. Missing content still uses explicit placeholders; the user has not certified extraction complete. Source gzip/media hashes and agreement with original performance rows are checked by the database validator. These snapshots supersede the earlier five-question enrichment coverage.
+
+## Scale and topic hierarchy update — 19 October 2026
+
+Default dashboards are independent of the number of mock names; tested with 30 original full mocks. Keep per-attempt dropdowns and wide single-mock plots behind the inspector. All UI chrome uses black/grey/steel; graph series and repair-map data indicators may use colours.
+
+QA uses the preserved five families/tiers and historical ranges. Sequences/progressions, logarithms and functions map to Algebra; surds/indices to Number Systems. Preserve original provider classifications alongside these preparation mappings. DILR includes all ten supplied families with separate tiers for grouping and arrangements. Chart appearance alone cannot classify reasoning: broad labels such as Table, Caselet, Puzzles or Groupings & Arrangements stay in Needs classification until evidence supports a primary family. Each question counts once; DILR set counts use mock-scoped set IDs. Historical reference percentages and personal observed question shares have distinct labels. No VARC frequency tier is invented. Unseen families remain visible as diagnostic needs.
+
+Future analyses should supply verified dates/order and source-backed `cat_family` classifications as described in ANALYSIS-CONTRACT.md. Existing source records are not rewritten by this dashboard update.

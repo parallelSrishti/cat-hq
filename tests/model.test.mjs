@@ -36,8 +36,8 @@ test("recovered originals remain 204 metadata rows with unknown dates", () => {
   assert.equal(d.coverage.datedMocks, 0);
   assert.equal(d.tasks.length, 63);
   assert.equal(d.xp, 0);
-  assert.equal(d.estimate.value, 94.83);
-  assert.ok(d.estimate.note.includes("unknown"));
+  assert.ok(Math.abs(d.estimate.value - (98.98 + 97.81 + 94.83) / 3) < 1e-10);
+  assert.ok(d.estimate.note.includes("undated"));
 });
 test("India day boundaries and explicit rescheduling preserve original due date", () => {
   assert.equal(today(new Date("2026-10-16T20:00:00Z")), "2026-10-17");
@@ -146,7 +146,7 @@ test("a new dated mock adds question-specific cold review missions and updates t
     { ...raw, mocks: [...raw.mocks, mock] },
     new Date("2026-10-21T12:00:00Z"),
   );
-  assert.equal(state.estimate.value, 96);
+  assert.equal(state.estimate.value, (98.98 + 97.81 + 94.83 + 96) / 4);
   assert.ok(
     state.tasks.some(
       (t) => t.id.startsWith("auto-new-mock-qa") && t.questionIds.length > 0,

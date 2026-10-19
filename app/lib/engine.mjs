@@ -1,3 +1,5 @@
+import { analytics, eligibleMocks } from "./analytics.mjs";
+import { classify } from "./hierarchy.mjs";
 import crypto from "node:crypto";
 import { estimate, riskScenario, CURVES, interpolate } from "./percentile.mjs";
 export const SECTIONS = ["VARC", "DILR", "QA"];
@@ -43,40 +45,25 @@ export function questionsOf(raw) {
   }
   return [...map.values()];
 }
-function family(section, topic) {
-  if (section === "QA") {
-    if (/Interest|Profit|Percent|Ratio|Mixture|Speed|Work|Average/i.test(topic))
-      return "Arithmetic";
-    if (
-      /Surd|Indice|Algebra|Quadratic|Linear|Inequal|Function|Logarith|Equation/i.test(
-        topic,
-      )
-    )
-      return "Algebra";
-    if (/Triangle|Mensuration|Geometry|Circle|Quadrilateral/i.test(topic))
-      return "Geometry";
-    if (/Number|Divis|Remainder|Integer/i.test(topic)) return "Number Systems";
-    return "Modern Math";
-  }
-  if (section === "DILR") {
-    if (/Group|Arrangement/i.test(topic)) return "Grouping / conditionality";
-    if (/Game|Tournament/i.test(topic)) return "Games / tournaments";
-    if (/Route|Schedul|Network/i.test(topic)) return "Routes / scheduling";
-    if (/Table|Hybrid|Caselet/i.test(topic)) return "Hybrid / reasoning DI";
-    return "Rotating families";
-  }
-  return topic;
-}
 export function topicStats(raw, questions) {
   const rows = new Map();
-  for (const q of raw.mocks.flatMap((m) => m.questions)) {
+  const annotations = new Map(questions.map((q) => [q.id, q]));
+  for (const original of eligibleMocks(raw.mocks).flatMap((m) => m.questions)) {
+    const annotation = annotations.get(original.id);
+    const q = {
+      ...original,
+      cat_family: annotation?.cat_family ?? original.cat_family,
+      classification_source:
+        annotation?.classification_source ?? original.classification_source,
+    };
     const key = q.section + "|" + q.topic;
     let t = rows.get(key);
     if (!t) {
       t = {
         section: q.section,
         topic: q.topic,
-        family: family(q.section, q.topic),
+        family: classify(q).name,
+        practiceBucket: classify(q).practiceBucket,
         total: 0,
         correct: 0,
         wrong: 0,
@@ -115,7 +102,8 @@ export function topicStats(raw, questions) {
       rows.set(key, {
         section: q.section,
         topic: q.topic,
-        family: family(q.section, q.topic),
+        family: classify(q).name,
+        practiceBucket: classify(q).practiceBucket,
         total: 0,
         correct: 0,
         wrong: 0,
@@ -131,7 +119,8 @@ export function topicStats(raw, questions) {
     {
       section: "DILR",
       topic: "Games & tournaments",
-      family: "Games / tournaments",
+      family: "Games & Tournaments",
+      practiceBucket: "Games / tournaments",
     },
   ];
   for (const t of discovery) {
@@ -155,13 +144,14 @@ export function topicStats(raw, questions) {
   }
   for (const t of rows.values()) {
     t.mockCount = Object.keys(t.byMock).length;
+    t.totalMockCount = eligibleMocks(raw.mocks).length;
     t.attempted = t.correct + t.wrong;
     t.accuracy = t.attempted ? (100 * t.correct) / t.attempted : null;
     t.priority =
       (4 * t.wrong + 2 * t.skipped) * (1 + Math.min(t.mockCount, 3) / 10);
     const weight =
-      raw.profile.qaAllocation[t.family] ??
-      raw.profile.dilrAllocation[t.family] ??
+      raw.profile.qaAllocation[t.practiceBucket || t.family] ??
+      raw.profile.dilrAllocation[t.practiceBucket || t.family] ??
       20;
     if (t.discovery) t.priority = weight;
     t.priority *= 1 + weight / 100;
@@ -468,11 +458,13 @@ export function derive(raw, now = new Date()) {
       ];
     }),
   );
+  const consolidated = analytics(raw.mocks, questions);
   const cat = estimate(raw.mocks, raw.profile);
   for (const t of tasks.filter((t) => t.status === "missed"))
     t.risk = riskScenario([t], topics, cat, raw.profile);
   return {
     profile: raw.profile,
+    analytics: consolidated,
     today: date,
     mocks: raw.mocks,
     questions,

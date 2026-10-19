@@ -102,7 +102,7 @@ The localhost server accepts JSON with the `X-HQ-Request: 1` header. Cross-origi
 
 A new mock ID is required; existing originals cannot be overwritten through import. The collection's question_count, question IDs, section marks, total score, dates and percentiles are validated. Preserve full source reports in the mock sources directory using the repository workflow. Reattempts remain in their separate original contract directory, not another copy of the original.
 
-For direct repository updates, preserve the same field semantics and run both validators. On a clean local startup/sync, new tracked records are read automatically without rebuilding the application. Add a dated new mock with provider CAT prediction when available; exact dates are required for recency weighting. Practice never changes original mock percentiles.
+For direct repository updates, preserve the same field semantics and run both validators. On a clean local startup/sync, new tracked records are read automatically without rebuilding the application. Add a dated new mock with provider CAT prediction when available; verified chronology is required for time trends; all original full mocks contribute to the consolidated summary regardless of date. Practice never changes original mock percentiles.
 
 ### Auto-sync boundaries
 
@@ -113,3 +113,19 @@ Only preparation paths are staged automatically. Application changes, unrelated 
 The user supplied updated databases after the first extraction. `question_details` now exposes `display_html`, `solution_display_html`, ordered option JSON and embedded media; `source_captures` stores gzip content with original byte lengths/hashes. The app reads these files directly, never rewrites them at runtime, and overlays content on the same original IDs. It uses `correct_response_option_label` or the numeric `correct_response` for grading. Images/math are rendered from sanitized display HTML. Keys and explanations are withheld from practice until an answer is saved.
 
 Keep updated snapshots at `data/mocks/<mock-id>/<mock-id>.db`, use an atomic replacement or stop the app while copying, validate with `scripts/validate_mock_databases.py`, then commit/push. Do not run the guarded legacy builder to replace newer tables. The 204 available views are not a declaration that extraction is complete; the user will confirm completion. Node SQLite is bundled with the documented runtime.
+
+### Consolidated analytics extension — 19 October 2026
+
+All original full mocks contribute to the dashboard. Provider CAT predictions are pooled separately from mock cohort percentiles; practice never rewrites either. No latest-five cutoff applies to the consolidated estimate. Timeline rolling windows and descriptive dip flags are separate views.
+
+For future records, preserve verified `attempt.attempt_date`. If exact dates are unavailable but the complete original-attempt order is verifiable, optionally record `attempt.chronological_order` as a globally unique positive integer across **all** original full mocks, with ordering evidence in the analysis/source files. This differs from `attempt.sequence` within a single mock. Partial/duplicate order values are not used: the chart falls back to verified dates. Unknown dates/orders stay unknown. Never infer chronology from a mock's title, file order, import date or review date. Same-day attempts share a daily mean in date-based charts.
+
+Optional `cat_family` and nonempty `classification_source` fields may annotate questions in a future original question collection or a full-content question-bank overlay. Use one primary family according to the reasoning actually required, citing the opened set/question evidence. Content overlays only contribute these classification fields to historical aggregation; they cannot replace marks/outcomes/timing. Keep provider `area` and `topic` intact. Do not classify Table/Bar Graph/Caselet as pure DI or hybrid solely from its appearance. Do not force Groupings & Arrangements into Tier 1.
+
+Family IDs:
+
+- QA: `arithmetic`, `algebra`, `geometry`, `numbers`, `modern`.
+- DILR: `grouping`, `games`, `hybrid`, `arrangements`, `reasoning-di`, `networks`, `pure-di`, `observation`, `puzzles`, `venn`.
+- VARC: `rc`, `va` (no invented frequency tier).
+
+An example annotation is `"cat_family": "hybrid", "classification_source": "data/mocks/<id>/sources/set-review.md"`. Explain why the set requires conditional reasoning in that cited file. Ambiguous labels remain unclassified. Absence in the mock sample means untested, not mastered or weak. Personal observed shares count questions and are not estimates of CAT set frequency.

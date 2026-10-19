@@ -122,72 +122,44 @@ export const inverse = (points, p) =>
     p,
   );
 export function estimate(mocks, profile, section = "ALL") {
-  const dated = mocks
-    .filter((m) => m.attempt?.attempt_date)
-    .sort((a, b) =>
-      a.attempt.attempt_date.localeCompare(b.attempt.attempt_date),
-    );
-  const baseline =
-    mocks.find((m) => m.mock_id === profile.baselineMockId) || mocks.at(-1);
-  if (section !== "ALL")
-    return {
-      value: baseline?.sections[section]?.provider_percentile ?? null,
-      label: "Selected mock sectional percentile",
-      kind: "mock",
-      count: 1,
-      anchor: baseline?.mock_id,
-      note: "This is the selected paper’s cohort result, not a CAT sectional forecast. Legacy attempt dates are unknown.",
-    };
-  const latest = dated.at(-1);
-  if (
-    latest &&
-    !Number.isFinite(latest.provider_estimates?.predicted_cat_percentile)
-  ) {
-    const recent = dated.slice(-5);
-    const value =
-      recent.reduce(
-        (s, m, i) => s + m.overall.provider_percentile * (i + 1),
-        0,
-      ) /
-      ((recent.length * (recent.length + 1)) / 2);
-    return {
-      value,
-      label: "Recent-mock percentile proxy",
-      kind: "mock-proxy",
-      count: recent.length,
-      anchor: latest.mock_id,
-      note: "The new mock has no provider CAT forecast. This is a recency-weighted mock-cohort proxy, not a CAT prediction; historical CAT loss conversion is unavailable until calibrated.",
-    };
-  }
-  const rows = dated
-    .filter((m) =>
-      Number.isFinite(m.provider_estimates?.predicted_cat_percentile),
-    )
-    .slice(-5);
-  if (rows.length) {
-    const value =
-      rows.reduce(
-        (s, m, i) =>
-          s + m.provider_estimates.predicted_cat_percentile * (i + 1),
-        0,
-      ) /
-      ((rows.length * (rows.length + 1)) / 2);
-    return {
-      value,
-      label: "Provisional CAT estimate",
-      kind: "provider",
-      count: rows.length,
-      anchor: rows.at(-1).mock_id,
-      note: "Recency-weighted provider CAT predictions from dated attempts. Not independently calibrated; practice does not change this estimate.",
-    };
-  }
+  const rows = mocks.filter(
+    (m) =>
+      m.attempt?.kind !== "reattempt" &&
+      ["QA", "DILR", "VARC"].every((s) => m.sections?.[s]),
+  );
+  const provider =
+    section === "ALL"
+      ? rows
+          .map((m) => m.provider_estimates?.predicted_cat_percentile)
+          .filter(Number.isFinite)
+      : [];
+  const values = provider.length
+    ? provider
+    : rows
+        .map((m) =>
+          section === "ALL"
+            ? m.overall?.provider_percentile
+            : m.sections[section]?.provider_percentile,
+        )
+        .filter(Number.isFinite);
+  const value = values.length
+    ? values.reduce((n, p) => n + p, 0) / values.length
+    : null;
   return {
-    value: baseline?.provider_estimates?.predicted_cat_percentile ?? null,
-    label: "Provisional CAT estimate",
-    kind: "provider",
-    count: baseline ? 1 : 0,
-    anchor: baseline?.mock_id,
-    note: "IMS prediction for the selected baseline. All three recovered attempt dates are unknown, so no recency trend is inferred. A fresh dated mock is needed.",
+    value,
+    label: provider.length
+      ? "All-mock CAT estimate"
+      : section === "ALL"
+        ? "All-mock cohort proxy"
+        : "All-mock sectional cohort mean",
+    kind: provider.length ? "provider" : "mock-proxy",
+    count: values.length,
+    mockCount: rows.length,
+    range: values.length ? [Math.min(...values), Math.max(...values)] : null,
+    anchor: null,
+    note: provider.length
+      ? `Equal-weight mean of ${provider.length} provider CAT predictions across ${rows.length} full mocks, including undated attempts. No five-mock cutoff or selected baseline. Provisional, not an independently calibrated forecast; the observed range is not a confidence interval.`
+      : `Mean of ${values.length} reported cohort percentiles across all ${rows.length} full mocks. A cohort summary is not a CAT prediction. Missing values are excluded and their coverage is shown.`,
   };
 }
 export function riskScenario(
@@ -229,8 +201,7 @@ export function riskScenario(
     for (const topic of names) {
       const key = topic.section + "|" + topic.topic;
       const questions =
-        topic.byMock?.[profile.baselineMockId]?.total ??
-        Math.round(topic.total / Math.max(1, topic.mockCount));
+        topic.total / Math.max(1, topic.totalMockCount || topic.mockCount);
       if (questions > 0)
         topicMap.set(key, {
           section: topic.section,
@@ -285,7 +256,7 @@ export function riskScenario(
             Math.max(...scenarios.map((s) => s.value)),
           ]
         : null,
-    note: "Stress scenario: 3 marks per exposed question, using the selected mock’s topic counts (or observed average). Percentile anchors are inverted separately on each historical curve before subtracting marks. This assumes comparable-scale marks and can overstate loss already reflected in baseline. Historical variation is not a confidence interval. No extrapolation beyond published 80–99 anchors.",
+    note: "Stress scenario: 3 marks per exposed question, using average topic-question exposure across all full mocks. Percentile anchors are inverted separately on each historical curve before subtracting marks. This assumes comparable-scale marks and can overstate loss already reflected in baseline. Historical variation is not a confidence interval. No extrapolation beyond published 80–99 anchors.",
     source: curveSource,
   };
 }

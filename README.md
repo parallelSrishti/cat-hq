@@ -1,6 +1,6 @@
 # Srishti's CAT 2026 HQ
 
-A local, Ubuntu-dark preparation dashboard built around **attempt → targeted repair → fresh transfer → delayed retest**. Plans, analyses and progress live in this Git repository. No cloud backend or AI API key is required.
+A local, black/grey/steel preparation dashboard with colour reserved for graphs and charts, built around **attempt → targeted repair → fresh transfer → delayed retest**. Plans, analyses and progress live in this Git repository. No cloud backend or AI API key is required.
 
 ## Run here or on another machine
 
@@ -17,10 +17,10 @@ Open **http://127.0.0.1:3000**. `npm run dev` builds the frontend and starts the
 
 ## Start using the HQ
 
-1. Overview shows the selected baseline and today's mission board. The imported reference plan contains 63 missions through 28 November; it is a provisional schedule, not an asserted CAT exam date.
+1. Overview shows a consolidated estimate across all original full mocks and today's mission board. Provider CAT predictions remain separate from mock-cohort percentiles; the consolidated number is provisional. Verified dates or a complete evidence-backed global order are needed for time trends. The imported reference plan contains 63 missions through 28 November; it is a provisional schedule, not an asserted CAT exam date.
 2. Open a mission and start its timer. Question views, shared passages, options and embedded diagrams load from the supplied SQLite databases. Where content is missing, use the labelled IMS reference placeholder. Save a response or explicit skip for each question. Supplied answer keys grade the response; self-checks stay labelled when a key is unavailable.
 3. Complete the required fresh transfer work and describe the first blocked step. Completion saves a session, grants learner XP once, creates the next repair/retest, and records why the plan changed.
-4. QA/DILR/VARC pages, Repair Lab and History expose charts and the underlying evidence. Unknown ability is labelled untested; original attempts are never overwritten by practice.
+4. QA/DILR/VARC pages show pooled performance and your tier/topic hierarchy. Trends & dips shows rolling trends and written analysis; individual mocks remain in a collapsed searchable archive (10 per page). Repair Lab summarizes topics across all mocks. Unknown ability is labelled untested; original attempts are never overwritten by practice.
 5. Records & sources accepts full question-content packages or new mock packages. The analysis chat can also commit to `data/mocks/` directly, then run sync here.
 
 ## GitHub sync

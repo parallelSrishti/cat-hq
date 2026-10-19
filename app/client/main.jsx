@@ -58,7 +58,7 @@ import {
 } from "recharts";
 import "./style.css";
 const COLORS = {
-  QA: "#f2a65a",
+  QA: "#78acd8",
   DILR: "#8b9fdb",
   VARC: "#83b8a1",
   correct: "#83b8a1",
@@ -203,7 +203,7 @@ function Bars({
               key={s.key}
               dataKey={s.key}
               name={s.label}
-              fill={s.color || "#e95420"}
+              fill={s.color || "#78acd8"}
               radius={[4, 4, 0, 0]}
               maxBarSize={36}
               stackId={s.stack}
@@ -364,39 +364,617 @@ function Board({ data, onOpen, full = false }) {
     </>
   );
 }
-function Home({ data, onOpen, onMock }) {
-  const baseline =
-    data.mocks.find((m) => m.mock_id === data.estimate.anchor) ||
-    data.mocks.find((m) => m.mock_id === data.profile.baselineMockId);
+function TrendPanel({
+  data,
+  section = "ALL",
+  compact = false,
+  measure: controlledMeasure,
+  onMeasureChange,
+}) {
+  const [windowSize, setWindowSize] = useState("all");
+  const [localMeasure, setLocalMeasure] = useState("cohort");
+  const measure = controlledMeasure ?? localMeasure;
+  const setMeasure = onMeasureChange || setLocalMeasure;
+  const timeline = data.analytics.timeline;
+  const key = section === "ALL" ? measure : section;
+  const trend = data.analytics.trends[key];
+  const points =
+    windowSize === "all"
+      ? timeline.points
+      : timeline.points.slice(-Number(windowSize));
+  const color =
+    section === "ALL"
+      ? key === "projection"
+        ? "#b39fe2"
+        : "#78acd8"
+      : COLORS[section];
+  const title =
+    section === "ALL"
+      ? key === "projection"
+        ? "Provider CAT predictions over time"
+        : "Mock cohort percentile over time"
+      : `${section} cohort percentile over time`;
+  return (
+    <Panel title={title} kicker="TREND · VERIFIED CHRONOLOGY" className="lower">
+      <div className="chart-controls">
+        {section === "ALL" && (
+          <label>
+            Measure{" "}
+            <select
+              aria-label="Trend measure"
+              value={measure}
+              onChange={(e) => setMeasure(e.target.value)}
+            >
+              <option value="cohort">Mock cohort percentile</option>
+              <option value="projection">Provider CAT prediction</option>
+            </select>
+          </label>
+        )}
+        <label>
+          Window{" "}
+          <select
+            aria-label={`${section} trend window`}
+            value={windowSize}
+            onChange={(e) => setWindowSize(e.target.value)}
+          >
+            <option value="all">All observations</option>
+            <option value="10">Latest 10</option>
+            <option value="5">Latest 5</option>
+          </select>
+        </label>
+      </div>
+      {points.some((p) => Number.isFinite(p[key])) ? (
+        <div
+          style={{ height: compact ? 230 : 290, minWidth: 0 }}
+          role="img"
+          aria-label={title}
+        >
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart
+              data={points}
+              margin={{ top: 16, right: 20, left: -20, bottom: 10 }}
+            >
+              <CartesianGrid {...grid} />
+              <XAxis
+                dataKey="index"
+                {...axis}
+                minTickGap={45}
+                tickFormatter={(v) =>
+                  points.find((p) => p.index === v)?.label || v
+                }
+              />
+              <YAxis
+                {...axis}
+                domain={[0, 100]}
+                tickFormatter={(v) => `${v}`}
+              />
+              <Tooltip
+                {...tip}
+                labelFormatter={(v) => {
+                  const p = points.find((p) => p.index === v);
+                  return p ? `${p.label} · ${p.count} mock(s)` : v;
+                }}
+                formatter={(v, name) => [fmt(v, 2), name]}
+              />
+              <Legend />
+              <Line
+                dataKey={key}
+                name={
+                  key === "projection"
+                    ? "Provider CAT prediction"
+                    : "Cohort percentile"
+                }
+                stroke={color}
+                strokeWidth={2}
+                dot={points.length < 15}
+                connectNulls={false}
+                isAnimationActive={false}
+              />
+              <Line
+                dataKey={key + "_rolling"}
+                name="Trailing ≤5-observation mean"
+                stroke="#79b99c"
+                strokeWidth={2}
+                strokeDasharray="5 4"
+                dot={false}
+                connectNulls={false}
+                isAnimationActive={false}
+              />
+              {trend.dips
+                .filter((d) => points.some((p) => p.index === d.index))
+                .map((d) => (
+                  <ReferenceDot
+                    key={d.index}
+                    x={d.index}
+                    y={d[key]}
+                    r={5}
+                    fill="#e48494"
+                    stroke="#191b1f"
+                  />
+                ))}
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      ) : (
+        <Empty>
+          {timeline.included
+            ? "No reported values for this series on the verified timeline."
+            : "No verified timeline yet."}{" "}
+          All {data.analytics.total} full mocks still contribute to the
+          consolidated view. Record exact attempt dates or an explicitly
+          verified global chronological order to reveal trends; file order and
+          mock names are not chronology.
+        </Empty>
+      )}
+      <p className="chart-note">
+        {timeline.included}/{timeline.total} mocks on the timeline ·{" "}
+        {timeline.points.length} observations · {timeline.excluded} without
+        verified chronology. {timeline.note}{" "}
+        {timeline.groupedDays &&
+          "The rolling mean weights daily observations equally."}{" "}
+        Pink markers flag descriptive dips. Percentiles are cohort-relative;
+        paper and cohort changes can also move them.
+      </p>
+    </Panel>
+  );
+}
+function TrendAnalysis({ data, section = "ALL", measure = "cohort" }) {
+  const trend = data.analytics.trends[section === "ALL" ? measure : section];
+  const weak = Object.entries(data.analytics.sections)
+    .filter(([, r]) => Number.isFinite(r.percentile))
+    .sort((a, b) => a[1].percentile - b[1].percentile)[0];
+  return (
+    <Panel
+      title="What the trend says"
+      kicker="EVIDENCE & INTERPRETATION"
+      className="lower"
+    >
+      <div className="stats-row trend-stats">
+        <Stat
+          label="DIRECTION"
+          value={trend.direction}
+          detail={
+            trend.change === null
+              ? "Needs two groups of five observations"
+              : `${trend.change > 0 ? "+" : ""}${fmt(trend.change, 2)} points · latest 5 vs preceding 5`
+          }
+        />
+        <Stat
+          label="RECENT VARIABILITY"
+          value={fmt(trend.dispersion, 2)}
+          detail="Percentile-point SD · latest ≤5 observations"
+        />
+        <Stat
+          label="FLAGGED DIPS"
+          value={trend.dips.length}
+          detail="Against the preceding 3–5 observations"
+        />
+      </div>
+      {!trend.observations ? (
+        <p>
+          No time-based improvement or decline can be inferred for this series
+          without verified chronology and reported values.
+          {section === "ALL" && measure === "cohort" && weak
+            ? ` ${weak[0]} has the lowest all-mock mean (${fmt(weak[1].percentile, 2)}); this identifies a relative repair priority, not a recent dip.`
+            : " Use the sectional hierarchy pages to locate demonstrated gaps."}
+        </p>
+      ) : (
+        <>
+          <p>
+            Latest observation: <b>{trend.latest.label}</b>,{" "}
+            {fmt(trend.latest[section === "ALL" ? measure : section], 2)}{" "}
+            {measure === "projection" && section === "ALL"
+              ? "provider CAT prediction percentile."
+              : "cohort percentile."}{" "}
+            {trend.change === null
+              ? "There is not yet enough verified history for a five-versus-five direction comparison."
+              : `The two-window change is ${fmt(trend.change, 2)} percentile points.`}
+          </p>
+          {trend.dips.slice(-3).map((d) => (
+            <p key={d.index}>
+              <b>{d.label}:</b> {fmt(d.drop, 2)} points below the
+              preceding-window mean of {fmt(d.baseline, 2)}. Inspect selection,
+              errors and timing in the attempt archive.
+            </p>
+          ))}
+          {section === "ALL" && trend.drivers.length > 0 && (
+            <p>
+              Latest section-score changes versus preceding available
+              observations:{" "}
+              {trend.drivers
+                .map(
+                  (d) =>
+                    `${d.section} ${d.marksChange >= 0 ? "+" : ""}${fmt(d.marksChange)} marks`,
+                )
+                .join("; ")}
+              . These describe score movements; they do not establish causes or
+              add up to an overall percentile change.
+            </p>
+          )}
+        </>
+      )}
+      <details>
+        <summary>Trend and dip rules</summary>
+        <p className="small muted">{trend.note}</p>
+      </details>
+    </Panel>
+  );
+}
+function HierarchyPanel({ data, section, onTopic }) {
+  const families = data.analytics.hierarchy[section];
+  const observed = families.filter((f) => f.total);
+  const groups = section === "VARC" ? [null] : [1, 2, 3, null];
+  return (
+    <Panel
+      title={`${section} topic hierarchy`}
+      kicker="ALL ORIGINAL MOCKS · FAMILY → TOPIC"
+      className="lower"
+    >
+      <p className="chart-note">
+        Historical frequency is your prioritization reference, not official
+        weightage. Observed share below counts questions in your mocks, not
+        CAT-wide frequency or DILR set frequency. Families with no sample need
+        diagnostics; they are not proven weaknesses. Broad IMS labels stay
+        unclassified until the set's reasoning is verified.
+      </p>
+      {section === "QA" && (
+        <p className="chart-note">
+          Preparation mapping: sequences/progressions, functions and logarithms
+          → Algebra; surds/indices → Number Systems. Original IMS area labels
+          remain in the question records.
+        </p>
+      )}
+      {observed.length > 0 && (
+        <div
+          style={{ height: Math.max(190, observed.length * 34 + 50) }}
+          role="img"
+          aria-label={`${section} family accuracy and question conversion`}
+        >
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={observed}
+              layout="vertical"
+              margin={{ left: 10, right: 20, top: 10, bottom: 10 }}
+            >
+              <CartesianGrid stroke="#34383e" horizontal={false} />
+              <XAxis type="number" domain={[0, 100]} {...axis} />
+              <YAxis
+                type="category"
+                dataKey="name"
+                width={155}
+                {...axis}
+                tickFormatter={(v) =>
+                  v.length > 25 ? v.slice(0, 23) + "…" : v
+                }
+              />
+              <Tooltip {...tip} formatter={(v, name) => [fmt(v) + "%", name]} />
+              <Legend />
+              <Bar
+                dataKey="accuracy"
+                name="Correct / attempted"
+                fill={COLORS[section]}
+                maxBarSize={14}
+              />
+              <Bar
+                dataKey="conversion"
+                name="Correct / all questions"
+                fill="#ba91cb"
+                maxBarSize={14}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      )}
+      {groups.map((tier) => {
+        const rows = families.filter((f) => f.tier === tier);
+        return (
+          rows.length > 0 && (
+            <div className="hierarchy-tier" key={tier ?? "none"}>
+              <h4>
+                {tier
+                  ? `Tier ${tier} · ${tier === 1 ? "Critical" : tier === 2 ? "Important" : "Lower frequency"}`
+                  : section === "VARC"
+                    ? "Section families · no frequency tier assigned"
+                    : "Needs classification"}
+              </h4>
+              {rows.map((f) => (
+                <details
+                  className="family-detail"
+                  key={f.id}
+                  open={tier === 1 || section === "VARC" ? true : undefined}
+                >
+                  <summary>
+                    <span>{f.name}</span>
+                    <span className="small muted">
+                      {f.frequency} · {f.total} questions · {f.sets} identified
+                      sets
+                    </span>
+                  </summary>
+                  {!f.total ? (
+                    <p className="small muted">
+                      Not sampled. Start with a fresh diagnostic before
+                      prescribing a lesson.
+                    </p>
+                  ) : (
+                    <>
+                      <p className="small muted">
+                        {f.correct}/{f.attempted} attempted correct ·{" "}
+                        {f.skipped} skipped · {fmt(f.accuracy)}% accuracy ·{" "}
+                        {fmt(f.observedShare)}% observed question share ·{" "}
+                        {f.marks} net marks
+                      </p>
+                      <div className="table-scroll">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Topic</th>
+                              <th>Correct / tried</th>
+                              <th>Skipped</th>
+                              <th>Accuracy</th>
+                              <th>Time / seen question</th>
+                              <th>Practice status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {f.topics.map((t) => {
+                              const current = data.topics.find(
+                                (x) =>
+                                  x.section === section && x.topic === t.topic,
+                              );
+                              return (
+                                <tr key={t.topic}>
+                                  <td>
+                                    <button
+                                      className="topic-link"
+                                      onClick={() => onTopic(current || t)}
+                                    >
+                                      {t.topic}
+                                    </button>
+                                  </td>
+                                  <td>
+                                    {t.correct}/{t.attempted}
+                                  </td>
+                                  <td>
+                                    {t.skipped}/{t.total}
+                                  </td>
+                                  <td>{fmt(t.accuracy)}%</td>
+                                  <td>{duration(t.seconds / t.total)}</td>
+                                  <td>
+                                    {current?.repairState || t.repairState}
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                    </>
+                  )}
+                </details>
+              ))}
+            </div>
+          )
+        );
+      })}
+    </Panel>
+  );
+}
+function SectionPage(props) {
+  const { section, data, onTopic, onOpen } = props;
+  const [inspect, setInspect] = useState(false);
+  const r = data.analytics.sections[section];
+  const topics = data.topics.filter((t) => t.section === section).slice(0, 5);
+  return (
+    <>
+      <div className="page-intro">
+        <div className="eyebrow">{section} · CONSOLIDATED EVIDENCE</div>
+        <h1>
+          {section === "QA"
+            ? "Build reliable routes."
+            : section === "DILR"
+              ? "Build the model. Then solve."
+              : "Read the claim. Test the options."}
+        </h1>
+        <p>
+          All {r.count} full mocks, current repair evidence, and the next
+          specific action.
+        </p>
+      </div>
+      <div className="stats-row">
+        <Stat
+          label="MEAN SECTION COHORT PERCENTILE"
+          value={fmt(r.percentile, 2)}
+          detail={`${r.percentileCount}/${r.count} reported · not a CAT forecast`}
+        />
+        <Stat
+          label="MEAN NET MARKS"
+          value={fmt(r.score)}
+          detail="All original full mocks"
+        />
+        <Stat
+          label="POOLED ACCURACY"
+          value={fmt(r.accuracy) + "%"}
+          detail={`${r.correct}/${r.attempted} correct · ${r.skipped} skipped`}
+        />
+        <Stat
+          label="OBSERVED PERCENTILE RANGE"
+          value={r.range ? `${fmt(r.range[0], 1)}–${fmt(r.range[1], 1)}` : "—"}
+          detail="Historical spread · not a confidence interval"
+        />
+      </div>
+      <TrendPanel data={data} section={section} />
+      <TrendAnalysis data={data} section={section} />
+      <div className="two-col lower">
+        <Panel title="Repair priorities" kicker="CURRENT CHECKED EVIDENCE">
+          {topics.map((t) => (
+            <button
+              className="repair-priority"
+              key={t.topic}
+              onClick={() => onTopic(t)}
+            >
+              <span>
+                <b>{t.topic}</b>
+                <small>
+                  {t.family} · {t.repairState}
+                </small>
+              </span>
+              <span>
+                {t.attempted ? `${fmt(t.accuracy)}%` : "Diagnostic"}
+                <ChevronRight size={14} />
+              </span>
+            </button>
+          ))}
+        </Panel>
+        <Panel
+          title="Your next specific actions"
+          kicker="SOLVE → REPAIR → TRANSFER"
+        >
+          {data.tasks
+            .filter(
+              (t) =>
+                t.section === section &&
+                t.status !== "done" &&
+                t.status !== "retired",
+            )
+            .slice(0, 3)
+            .map((t) => (
+              <TaskCard key={t.id} task={t} onOpen={onOpen} />
+            ))}
+          <p className="small muted">
+            A video is followed by a 5–10-question assessment. Fresh and delayed
+            results update repair status; familiar redo accuracy does not
+            establish mastery.
+          </p>
+        </Panel>
+      </div>
+      <HierarchyPanel data={data} section={section} onTopic={onTopic} />
+      <details
+        className="panel lower attempt-inspector"
+        onToggle={(e) => setInspect(e.currentTarget.open)}
+      >
+        <summary>
+          Inspect an individual attempt · detailed timing and original results
+        </summary>
+        {inspect && <AttemptDetails {...props} />}
+      </details>
+    </>
+  );
+}
+function AttemptArchive({ data, onMock }) {
+  const [open, setOpen] = useState(false),
+    [query, setQuery] = useState(""),
+    [page, setPage] = useState(0);
+  const filtered = data.mocks.filter((m) =>
+    m.name.toLowerCase().includes(query.toLowerCase()),
+  );
+  const pageCount = Math.max(1, Math.ceil(filtered.length / 10));
+  const current = Math.min(page, pageCount - 1);
+  return (
+    <details
+      className="panel lower attempt-inspector"
+      onToggle={(e) => setOpen(e.currentTarget.open)}
+    >
+      <summary>Individual mock archive · {data.mocks.length} attempts</summary>
+      {open && (
+        <>
+          <label className="archive-search">
+            Find an attempt{" "}
+            <input
+              aria-label="Find an attempt"
+              type="search"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setPage(0);
+              }}
+              placeholder="Search mock name"
+            />
+          </label>
+          <div className="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Attempt</th>
+                  <th>Date</th>
+                  <th>Score</th>
+                  <th>Mock percentile</th>
+                  <th>Provider CAT prediction</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filtered.slice(current * 10, current * 10 + 10).map((m) => (
+                  <tr key={m.mock_id}>
+                    <td>{m.name}</td>
+                    <td>{m.attempt.attempt_date || "Unknown"}</td>
+                    <td>{m.overall.score}</td>
+                    <td>{fmt(m.overall.provider_percentile, 2)}</td>
+                    <td>
+                      {fmt(m.provider_estimates?.predicted_cat_percentile, 2)}
+                    </td>
+                    <td>
+                      <button className="secondary" onClick={() => onMock(m)}>
+                        Inspect
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            {!filtered.length && <Empty>No matching attempts.</Empty>}
+          </div>
+          <div className="pagination">
+            <button
+              className="secondary"
+              disabled={current === 0}
+              onClick={() => setPage(current - 1)}
+            >
+              Previous
+            </button>
+            <span>
+              Page {current + 1} of {pageCount}
+            </span>
+            <button
+              className="secondary"
+              disabled={current + 1 >= pageCount}
+              onClick={() => setPage(current + 1)}
+            >
+              Next
+            </button>
+          </div>
+        </>
+      )}
+    </details>
+  );
+}
+
+function Home({ data, onOpen }) {
+  const [measure, setMeasure] = useState("cohort");
+  const summary = data.analytics.summary;
   const complete = data.tasks.filter((t) => t.status === "done").length;
   const missed = data.tasks.filter((t) => t.status === "missed").length;
   const next =
     data.tasks.find((t) => t.status === "today") ||
     data.tasks.find((t) => t.status === "missed");
-  const scores = data.mocks.map((m) => ({
-    name: m.name.replace(" 2026", ""),
-    mock: m.overall.provider_percentile,
-    cat: m.provider_estimates?.predicted_cat_percentile,
-  }));
   return (
     <>
       <div className="page-intro">
         <div className="eyebrow">YOUR NEXT ATTEMPT STARTS HERE</div>
         <h1>
-          Make the next question count<span className="orange">.</span>
+          Make the next question count<span className="accent">.</span>
         </h1>
         <p>Solve first. Find the gap. Come back stronger.</p>
       </div>
       <div className="hero-grid">
         <section className="forecast panel">
           <div className="forecast-top">
-            <Badge tone="orange">CAT 2026 · 99+ TARGET</Badge>
+            <Badge tone="accent">CAT 2026 · 99+ TARGET</Badge>
             <Target size={24} />
           </div>
           <span className="eyebrow">
             {data.estimate.kind === "mock-proxy"
-              ? "RECENT-MOCK PERCENTILE PROXY"
-              : "PROVISIONAL CAT PERCENTILE"}
+              ? "ALL-MOCK COHORT PROXY"
+              : "ALL-MOCK PROVISIONAL CAT ESTIMATE"}
           </span>
           <div className="forecast-number">
             {fmt(data.estimate.value, 2)}
@@ -405,8 +983,8 @@ function Home({ data, onOpen, onMock }) {
           <p>
             {data.estimate.kind === "mock-proxy"
               ? "Mock-cohort proxy"
-              : "IMS estimate"}{" "}
-            · {baseline?.name}
+              : "Provider CAT estimates"}{" "}
+            · {data.estimate.count}/{data.estimate.mockCount} full mocks
           </p>
           <div className="goal-track">
             <span
@@ -418,7 +996,7 @@ function Home({ data, onOpen, onMock }) {
               Target <b>99+</b>
             </span>
             <span>
-              Mock cohort <b>{fmt(baseline?.overall.provider_percentile, 2)}</b>
+              Mock cohort <b>{fmt(summary.percentile, 2)}</b>
             </span>
           </div>
           <small>{data.estimate.note}</small>
@@ -430,37 +1008,37 @@ function Home({ data, onOpen, onMock }) {
         >
           <div className="section-checks">
             {["VARC", "DILR", "QA"].map((s) => {
-              const v = baseline?.sections[s];
+              const v = data.analytics.sections[s];
               return (
                 <button key={s} onClick={() => go(s)}>
                   <div className="section-check-name">
-                    <span style={{ background: COLORS[s] }} />
+                    <span style={{ background: "#8995a5" }} />
                     {s}
                     <ArrowUpRight size={14} />
                   </div>
                   <strong>
-                    {fmt(v?.provider_percentile, 2)}
-                    <small>mock percentile</small>
+                    {fmt(v?.percentile, 2)}
+                    <small>mean cohort percentile</small>
                   </strong>
                   <div className="mini-track">
                     <span
                       style={{
-                        width: (v?.provider_percentile || 0) + "%",
-                        background: COLORS[s],
+                        width: (v?.percentile || 0) + "%",
+                        background: "#8995a5",
                       }}
                     />
                   </div>
                   <span className="small muted">
-                    {v?.score} marks · {fmt(v?.statistics.accuracy_percent)}%
-                    accuracy
+                    {fmt(v?.score)} mean marks · {fmt(v?.accuracy)}% accuracy
                   </span>
                 </button>
               );
             })}
           </div>
           <div className="subtle-note">
-            <ShieldCheck size={16} /> Unknown attempt dates. These are baseline
-            results, not a current-readiness claim.
+            <ShieldCheck size={16} /> All {data.analytics.total} full mocks
+            contribute. Section cohort means are not calibrated CAT forecasts;
+            missing dates limit trend analysis.
           </div>
         </Panel>
       </div>
@@ -479,7 +1057,7 @@ function Home({ data, onOpen, onMock }) {
           label="REPAIR XP"
           value={data.xp}
           detail={`Level ${data.level} · next at ${data.level * 250} XP`}
-          color="#eaa266"
+          color="#b3bdc9"
         />
         <Stat
           label="OPEN CARRYOVERS"
@@ -497,29 +1075,14 @@ function Home({ data, onOpen, onMock }) {
         </button>
       </div>
       <Board data={data} onOpen={onOpen} />
+      <TrendPanel
+        data={data}
+        compact
+        measure={measure}
+        onMeasureChange={setMeasure}
+      />
       <div className="two-col lower">
-        <Panel
-          title="Three attempts, two different measures"
-          kicker="MOCK SNAPSHOT"
-        >
-          <Bars
-            data={scores}
-            percent
-            series={[
-              { key: "mock", label: "Mock cohort", color: "#8b9fdb" },
-              { key: "cat", label: "IMS CAT prediction", color: "#e89a65" },
-            ]}
-            click={(name) =>
-              onMock(
-                data.mocks.find((m) => m.name.replace(" 2026", "") === name),
-              )
-            }
-          />
-          <p className="chart-note">
-            Legacy dates are unknown. Categories follow source order, not a time
-            trend.
-          </p>
-        </Panel>
+        <TrendAnalysis data={data} measure={measure} />
         <Risk data={data} />
       </div>
     </>
@@ -531,7 +1094,7 @@ function Risk({ data }) {
     <Panel
       title="What’s at risk if it stays unresolved?"
       kicker="ACCOUNTABILITY SCENARIO"
-      action={<TriangleAlert size={18} color="#eaa266" />}
+      action={<TriangleAlert size={18} color="#b3bdc9" />}
     >
       <div className="risk-summary">
         <strong>
@@ -551,7 +1114,7 @@ function Risk({ data }) {
         <Bars
           height={150}
           data={risk.exposure.map((t) => ({ name: t.topic, marks: t.marks }))}
-          series={[{ key: "marks", label: "Topic exposure", color: "#b38364" }]}
+          series={[{ key: "marks", label: "Topic exposure", color: "#78acd8" }]}
         />
       ) : (
         <p className="muted">No mapped topic exposure from overdue tasks.</p>
@@ -572,7 +1135,7 @@ function Risk({ data }) {
     </Panel>
   );
 }
-function SectionPage({ section, data, onTopic, onQuestion, onOpen }) {
+function AttemptDetails({ section, data, onTopic, onQuestion, onOpen }) {
   const [only, setOnly] = useState(data.profile.baselineMockId);
   const mock = data.mocks.find((m) => m.mock_id === only) || data.mocks[0];
   const r = mock.sections[section];
@@ -642,7 +1205,7 @@ function SectionPage({ section, data, onTopic, onQuestion, onOpen }) {
           label="SELECTED MOCK PERCENTILE"
           value={fmt(r.provider_percentile, 2)}
           detail="CAT sectional forecast is uncalibrated"
-          color={COLORS[section]}
+          color="#b3bdc9"
         />
         <Stat
           label="NET MARKS"
@@ -655,17 +1218,9 @@ function SectionPage({ section, data, onTopic, onQuestion, onOpen }) {
           detail={`${r.statistics.attempted} attempts · ${r.statistics.skipped} skipped`}
         />
         <Stat
-          label="HISTORICAL CAT SCENARIO"
-          value={
-            data.sectionalScenarios[section].high == null
-              ? "Uncalibrated"
-              : data.sectionalScenarios[section].low == null
-                ? "≤" + fmt(data.sectionalScenarios[section].high)
-                : fmt(data.sectionalScenarios[section].low) +
-                  "–" +
-                  fmt(data.sectionalScenarios[section].high)
-          }
-          detail="Baseline marks on 2023–25 curves; not a forecast"
+          label="RESULT SOURCE"
+          value="Original"
+          detail="Reattempts remain separate from original performance"
         />
       </div>
       <div className="two-col">
@@ -858,7 +1413,9 @@ function SectionPage({ section, data, onTopic, onQuestion, onOpen }) {
               const actual = sessions
                 .filter((s) =>
                   data.topics.some(
-                    (t) => t.topic === s.topic && t.family === name,
+                    (t) =>
+                      t.topic === s.topic &&
+                      (t.practiceBucket || t.family) === name,
                   ),
                 )
                 .reduce((n, s) => n + s.elapsedSeconds, 0);
@@ -904,60 +1461,46 @@ function Repairs({ data, onTopic }) {
       </div>
       <div className="two-col">
         <Panel
-          title="Topic performance heatmap"
-          kicker="SELECT A CELL TO INSPECT"
+          title="Consolidated repair map"
+          kicker="ALL MOCKS · CLICK A TOPIC"
         >
-          <div className="heatmap">
-            <div className="heat-row head">
-              <span>Topic</span>
-              {data.mocks.map((m) => (
-                <span key={m.mock_id}>{m.name.replace(" 2026", "")}</span>
-              ))}
-            </div>
-            {data.topics.slice(0, 18).map((t) => (
-              <button
-                className="heat-row"
-                key={t.section + t.topic}
-                onClick={() => onTopic(t)}
-              >
-                <span>
-                  <Badge tone={t.section.toLowerCase()}>{t.section}</Badge>{" "}
-                  {t.topic}
-                </span>
-                {data.mocks.map((m) => {
-                  const v = t.byMock[m.mock_id];
-                  const acc =
-                    v && v.correct + v.wrong
-                      ? v.correct / (v.correct + v.wrong)
-                      : null;
-                  return (
-                    <span
-                      key={m.mock_id}
-                      className="heat-cell"
+          <p className="chart-note">
+            Each cell summarizes all original attempts. Colour shows accuracy:
+            green ≥80%, blue ≥50%, pink &lt;50%, grey untested. Fresh practice
+            status is shown separately.
+          </p>
+          <div className="repair-map">
+            {["QA", "DILR", "VARC"].map((section) => (
+              <div key={section}>
+                <h4>{section}</h4>
+                {data.topics
+                  .filter((t) => t.section === section)
+                  .map((t) => (
+                    <button
+                      className="repair-map-cell"
+                      key={t.topic}
+                      onClick={() => onTopic(t)}
                       style={{
-                        background:
-                          acc == null
-                            ? "#303034"
-                            : acc >= 0.8
-                              ? "#305247"
-                              : acc >= 0.5
-                                ? "#69513a"
-                                : "#653c3d",
+                        borderLeftColor:
+                          t.accuracy == null
+                            ? "#676f7b"
+                            : t.accuracy >= 80
+                              ? "#79b99c"
+                              : t.accuracy >= 50
+                                ? "#78acd8"
+                                : "#e48494",
                       }}
                     >
-                      {v
-                        ? `${v.correct}/${v.correct + v.wrong} · ${v.skipped} skip`
-                        : "No sample"}
-                    </span>
-                  );
-                })}
-              </button>
+                      <b>{t.topic}</b>
+                      <span>
+                        {t.correct}/{t.attempted} correct · {t.skipped} skipped
+                      </span>
+                      <small>{t.repairState}</small>
+                    </button>
+                  ))}
+              </div>
             ))}
           </div>
-          <p className="chart-note">
-            Cells show correct/attempted and skips. Grey means untested or no
-            sample.
-          </p>
         </Panel>
         <div>
           <Panel title="The next repair loop" kicker="EVIDENCE GATES">
@@ -1024,137 +1567,44 @@ function Repairs({ data, onTopic }) {
     </>
   );
 }
-function DatedTrend({ data }) {
-  const dated = data.mocks
-    .filter((m) => m.attempt.attempt_date)
-    .sort((a, b) =>
-      a.attempt.attempt_date.localeCompare(b.attempt.attempt_date),
-    )
-    .map((m) => ({
-      date: m.attempt.attempt_date,
-      mock: m.overall.provider_percentile,
-      cat: m.provider_estimates?.predicted_cat_percentile ?? null,
-    }));
-  return (
-    <Panel
-      title="Percentile over time"
-      kicker="DATED ATTEMPTS ONLY"
-      className="lower"
-    >
-      {dated.length ? (
-        <div style={{ height: 220 }}>
-          <ResponsiveContainer>
-            <LineChart
-              data={dated}
-              margin={{ top: 15, right: 15, left: -20, bottom: 10 }}
-            >
-              <CartesianGrid {...grid} />
-              <XAxis dataKey="date" {...axis} />
-              <YAxis domain={[0, 100]} {...axis} />
-              <Tooltip {...tip} />
-              <Line
-                type="linear"
-                dataKey="mock"
-                name="Mock percentile"
-                stroke="#8b9fdb"
-                connectNulls={false}
-              />
-              <Line
-                type="linear"
-                dataKey="cat"
-                name="IMS CAT estimate"
-                stroke="#e89a65"
-                connectNulls={false}
-              />
-              <Legend />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-      ) : (
-        <Empty>
-          The recovered attempts have no exact dates. Your first dated mock will
-          start this timeline.
-        </Empty>
-      )}
-    </Panel>
-  );
-}
 function HistoryPage({ data, onMock }) {
+  const [measure, setMeasure] = useState("cohort");
   return (
     <>
       <div className="page-intro">
         <div className="eyebrow">THE EVIDENCE ROOM</div>
-        <h1>Every attempt tells a story.</h1>
-        <p>Full analyses, question records, and the decisions they changed.</p>
+        <h1>Follow the trend. Inspect the dip.</h1>
+        <p>
+          Consolidated evidence first. Open the archive for individual analyses
+          and question records.
+        </p>
       </div>
-      <Panel
-        title="Mock attempts"
-        kicker={`${data.coverage.rows} ORIGINAL PERFORMANCE RECORDS`}
-      >
-        <div className="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>Attempt</th>
-                <th>Date</th>
-                <th>Score</th>
-                <th>Mock percentile</th>
-                <th>IMS CAT prediction</th>
-                <th />
-              </tr>
-            </thead>
-            <tbody>
-              {data.mocks.map((m) => (
-                <tr
-                  key={m.mock_id}
-                  className="clickable"
-                  onClick={() => onMock(m)}
-                >
-                  <td>
-                    <b>{m.name}</b>
-                  </td>
-                  <td>{m.attempt.attempt_date || "Unknown"}</td>
-                  <td>{m.overall.score}</td>
-                  <td>{fmt(m.overall.provider_percentile, 2)}</td>
-                  <td>
-                    {fmt(m.provider_estimates?.predicted_cat_percentile, 2)}
-                  </td>
-                  <td>
-                    <ArrowUpRight size={16} />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </Panel>
-      <DatedTrend data={data} />
-      <div className="two-col lower">
-        <Panel title="Correct, wrong, and left for later">
-          <Bars
-            data={data.mocks.map((m) => ({
-              name: m.name.replace(" 2026", ""),
-              correct: m.overall.statistics.correct,
-              wrong: m.overall.statistics.incorrect,
-              skipped: m.overall.statistics.skipped,
-            }))}
-            series={[
-              {
-                key: "correct",
-                label: "Correct",
-                color: COLORS.correct,
-                stack: "a",
-              },
-              { key: "wrong", label: "Wrong", color: COLORS.wrong, stack: "a" },
-              {
-                key: "skipped",
-                label: "Skipped",
-                color: COLORS.skipped,
-                stack: "a",
-              },
-            ]}
-          />
-        </Panel>
+      <div className="stats-row">
+        <Stat
+          label="FULL MOCKS"
+          value={data.analytics.total}
+          detail="Every original contributes"
+        />
+        <Stat
+          label="CONSOLIDATED CAT ESTIMATE"
+          value={fmt(data.estimate.value, 2)}
+          detail={`${data.estimate.count} available ${data.estimate.kind === "provider" ? "provider predictions" : "cohort proxies"}`}
+        />
+        <Stat
+          label="MEAN MOCK COHORT PERCENTILE"
+          value={fmt(data.analytics.summary.percentile, 2)}
+          detail="Distinct from CAT predictions"
+        />
+        <Stat
+          label="POOLED ACCURACY"
+          value={fmt(data.analytics.summary.accuracy) + "%"}
+          detail="Correct / attempted across all mocks"
+        />
+      </div>
+      <TrendPanel data={data} measure={measure} onMeasureChange={setMeasure} />
+      <TrendAnalysis data={data} measure={measure} />
+      <AttemptArchive data={data} onMock={onMock} />
+      <div className="lower">
         <Panel title="Plan revisions" kicker="WHY THE QUEUE CHANGED">
           {data.revisions.length ? (
             data.revisions.slice(0, 6).map((r) => (
@@ -1281,7 +1731,7 @@ function SettingsPage({ data, refresh, notify }) {
               />
             </label>
             <label>
-              Selected baseline
+              Individual-review starting mock
               <select
                 value={p.baselineMockId}
                 onChange={(e) => setP({ ...p, baselineMockId: e.target.value })}
@@ -1657,7 +2107,7 @@ function Practice({ id, data, refresh, notify }) {
                 seconds: a.seconds,
               }))}
               series={[
-                { key: "seconds", label: "Active seconds", color: "#e89a65" },
+                { key: "seconds", label: "Active seconds", color: "#b39fe2" },
               ]}
             />
           </Panel>
@@ -2389,7 +2839,7 @@ function App() {
     ["home", "Overview", LayoutDashboard],
     ["board", "Mission board", Columns3],
     ["repairs", "Repair lab", Brain],
-    ["history", "Mock history", History],
+    ["history", "Trends & dips", History],
   ];
   const iconMap = { QA: Calculator, DILR: Brain, VARC: Languages };
   const subtitle =
@@ -2402,7 +2852,7 @@ function App() {
           : page === "repairs"
             ? "Repair lab"
             : page === "history"
-              ? "Mock history"
+              ? "Trends & dips"
               : page === "import"
                 ? "Records & sources"
                 : page === "settings"
@@ -2465,7 +2915,7 @@ function App() {
             const Icon = iconMap[s];
             return (
               <a key={s} href={"#/" + s} className={page === s ? "active" : ""}>
-                <Icon size={18} color={COLORS[s]} />
+                <Icon size={18} color="#b3bdc9" />
                 {s}
                 <ChevronRight size={13} className="nav-arrow" />
               </a>
@@ -2485,7 +2935,7 @@ function App() {
         </nav>
         <div className="sidebar-bottom">
           <div className="level-box">
-            <Flame size={22} color="#ef986b" />
+            <Flame size={22} color="#b3bdc9" />
             <div>
               Level {data.level} · {data.xp} XP
               <small>Consistency compounds.</small>

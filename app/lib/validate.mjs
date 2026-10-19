@@ -1,6 +1,19 @@
 export const safeId = (id) =>
   typeof id === "string" && /^[A-Za-z0-9:_-]{1,220}$/.test(id);
+function validateClassification(q) {
+  if (
+    q.cat_family != null &&
+    (typeof q.cat_family !== "string" ||
+      !q.cat_family.trim() ||
+      typeof q.classification_source !== "string" ||
+      !q.classification_source.trim())
+  )
+    throw Error(
+      "CAT family classification requires a family and source provenance.",
+    );
+}
 export function validateContent(q) {
+  validateClassification(q);
   if (
     !safeId(q.id) ||
     !["QA", "DILR", "VARC"].includes(q.section) ||
@@ -34,6 +47,8 @@ export function validateContent(q) {
     "set_id",
     "question_number",
     "source",
+    "cat_family",
+    "classification_source",
   ];
   return Object.fromEntries(
     keys.filter((k) => q[k] !== undefined).map((k) => [k, q[k]]),
@@ -51,6 +66,14 @@ export function validateMockPackage(pkg) {
     );
   if (!results.name || !results.attempt?.id)
     throw Error("Results require name and attempt.id.");
+  if (
+    results.attempt.chronological_order != null &&
+    (!Number.isInteger(results.attempt.chronological_order) ||
+      results.attempt.chronological_order < 1)
+  )
+    throw Error(
+      "chronological_order must be a positive integer backed by verified ordering evidence.",
+    );
   const date = results.attempt.attempt_date;
   if (
     date != null &&
@@ -75,6 +98,7 @@ export function validateMockPackage(pkg) {
   const ids = new Set();
   let score = 0;
   for (const q of questions.questions) {
+    validateClassification(q);
     if (!safeId(q.id) || ids.has(q.id))
       throw Error("Question IDs must be safe and unique.");
     ids.add(q.id);
