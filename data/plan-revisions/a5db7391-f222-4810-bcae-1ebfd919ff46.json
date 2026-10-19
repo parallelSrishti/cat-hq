@@ -1,0 +1,628 @@
+{
+  "id": "a5db7391-f222-4810-bcae-1ebfd919ff46",
+  "at": "2026-10-19T22:17:35.685Z",
+  "reason": "Completed Rebuild SimCAT 2 DILR Q1–5: rooms and instruments",
+  "estimate": {
+    "value": 97.20666666666666,
+    "label": "All-mock CAT estimate",
+    "kind": "provider",
+    "count": 3,
+    "mockCount": 3,
+    "range": [
+      94.83,
+      98.98
+    ],
+    "anchor": null,
+    "note": "Equal-weight mean of 3 provider CAT predictions across 3 full mocks, including undated attempts. No five-mock cutoff or selected baseline. Provisional, not an independently calibrated forecast; the observed range is not a confidence interval."
+  },
+  "openTasks": [
+    {
+      "id": "mission-13c6a4af6200",
+      "due": "2026-10-16",
+      "priority": 15.08
+    },
+    {
+      "id": "mission-de940674b992",
+      "due": "2026-10-17",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-f353ff43a51d",
+      "due": "2026-10-17",
+      "priority": 5.184
+    },
+    {
+      "id": "mission-0b6967dfa371",
+      "due": "2026-10-18",
+      "priority": 31.2
+    },
+    {
+      "id": "mission-c574df1c0368",
+      "due": "2026-10-18",
+      "priority": 0
+    },
+    {
+      "id": "mission-0f1008f41e1f",
+      "due": "2026-10-18",
+      "priority": 0
+    },
+    {
+      "id": "mission-b481d0262861",
+      "due": "2026-10-19",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-8735233ce6f3",
+      "due": "2026-10-19",
+      "priority": 0
+    },
+    {
+      "id": "mission-200d45e9f5ed",
+      "due": "2026-10-20",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-e69351c69531",
+      "due": "2026-10-21",
+      "priority": 71.76
+    },
+    {
+      "id": "next-b07e2a1a-e333-4bc2-9a0d-d48617d530ce",
+      "due": "2026-10-21",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-96f9e21bfe26",
+      "due": "2026-10-21",
+      "priority": 0
+    },
+    {
+      "id": "mission-1df09684c4c8",
+      "due": "2026-10-22",
+      "priority": 0
+    },
+    {
+      "id": "mission-c1f52a637585",
+      "due": "2026-10-23",
+      "priority": 0
+    },
+    {
+      "id": "mission-5e968f60a846",
+      "due": "2026-10-24",
+      "priority": 0
+    },
+    {
+      "id": "mission-57f8d4b56f6d",
+      "due": "2026-10-25",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-b8d779a2d082",
+      "due": "2026-10-25",
+      "priority": 0
+    },
+    {
+      "id": "mission-d982adc6eac5",
+      "due": "2026-10-26",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-fc51fe0dbd32",
+      "due": "2026-10-26",
+      "priority": 0
+    },
+    {
+      "id": "mission-4210b805f117",
+      "due": "2026-10-27",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-07c3f12e9aa2",
+      "due": "2026-10-28",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-f7e9d9a306ac",
+      "due": "2026-10-28",
+      "priority": 0
+    },
+    {
+      "id": "mission-428060a29dd5",
+      "due": "2026-10-29",
+      "priority": 0
+    },
+    {
+      "id": "mission-5d22d3c4dc16",
+      "due": "2026-10-30",
+      "priority": 0
+    },
+    {
+      "id": "mission-05266a8258d8",
+      "due": "2026-10-31",
+      "priority": 0
+    },
+    {
+      "id": "mission-8f9e0b3aa325",
+      "due": "2026-11-01",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-07b2c3ef9808",
+      "due": "2026-11-01",
+      "priority": 0
+    },
+    {
+      "id": "mission-ecfafe7a2f38",
+      "due": "2026-11-02",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-0f306bd7e5dd",
+      "due": "2026-11-02",
+      "priority": 0
+    },
+    {
+      "id": "mission-1c222767168a",
+      "due": "2026-11-03",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-dc92801c9a6b",
+      "due": "2026-11-04",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-7c896606e9ee",
+      "due": "2026-11-04",
+      "priority": 0
+    },
+    {
+      "id": "mission-1da002606146",
+      "due": "2026-11-05",
+      "priority": 0
+    },
+    {
+      "id": "mission-ff105eaa8617",
+      "due": "2026-11-06",
+      "priority": 0
+    },
+    {
+      "id": "mission-fd9a77042eda",
+      "due": "2026-11-07",
+      "priority": 0
+    },
+    {
+      "id": "mission-11a4031a3f01",
+      "due": "2026-11-08",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-2e1160d3c92e",
+      "due": "2026-11-08",
+      "priority": 0
+    },
+    {
+      "id": "mission-1ac345f33745",
+      "due": "2026-11-09",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-db6a96c40591",
+      "due": "2026-11-09",
+      "priority": 0
+    },
+    {
+      "id": "mission-fc7675e70afa",
+      "due": "2026-11-10",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-06e76cd2835b",
+      "due": "2026-11-11",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-ca133ec22d56",
+      "due": "2026-11-11",
+      "priority": 0
+    },
+    {
+      "id": "mission-60cb0b8b594f",
+      "due": "2026-11-12",
+      "priority": 0
+    },
+    {
+      "id": "mission-41c30cdc2470",
+      "due": "2026-11-13",
+      "priority": 0
+    },
+    {
+      "id": "mission-e27f9a2effc8",
+      "due": "2026-11-14",
+      "priority": 0
+    },
+    {
+      "id": "mission-259a8c955f0c",
+      "due": "2026-11-15",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-2d4f2bd08c9d",
+      "due": "2026-11-15",
+      "priority": 0
+    },
+    {
+      "id": "mission-541f72453af0",
+      "due": "2026-11-16",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-4c92060515b2",
+      "due": "2026-11-16",
+      "priority": 0
+    },
+    {
+      "id": "mission-bb7efc8bac95",
+      "due": "2026-11-17",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-a61ecdbd8f0d",
+      "due": "2026-11-18",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-7386f3664cad",
+      "due": "2026-11-18",
+      "priority": 0
+    },
+    {
+      "id": "mission-93b606b4da85",
+      "due": "2026-11-19",
+      "priority": 0
+    },
+    {
+      "id": "mission-526a5fbe8220",
+      "due": "2026-11-20",
+      "priority": 0
+    },
+    {
+      "id": "mission-eeef1d0f55f2",
+      "due": "2026-11-21",
+      "priority": 0
+    },
+    {
+      "id": "mission-5bf2dba2a0dc",
+      "due": "2026-11-22",
+      "priority": 71.76
+    },
+    {
+      "id": "mission-832828fc2e7b",
+      "due": "2026-11-22",
+      "priority": 0
+    },
+    {
+      "id": "mission-aee919d161c7",
+      "due": "2026-11-23",
+      "priority": 0
+    },
+    {
+      "id": "mission-944cadb24b84",
+      "due": "2026-11-24",
+      "priority": 0
+    },
+    {
+      "id": "mission-cc6aae6852ec",
+      "due": "2026-11-25",
+      "priority": 0
+    },
+    {
+      "id": "mission-68ded2df35de",
+      "due": "2026-11-26",
+      "priority": 0
+    },
+    {
+      "id": "mission-e43da429c023",
+      "due": "2026-11-27",
+      "priority": 0
+    },
+    {
+      "id": "mission-8420d549eb63",
+      "due": "2026-11-28",
+      "priority": 0
+    }
+  ],
+  "topicStates": [
+    {
+      "section": "DILR",
+      "topic": "Groupings & Arrangements",
+      "state": "Diagnose"
+    },
+    {
+      "section": "VARC",
+      "topic": "Summary",
+      "state": "Diagnose"
+    },
+    {
+      "section": "VARC",
+      "topic": "Specific Detail Question",
+      "state": "Diagnose"
+    },
+    {
+      "section": "DILR",
+      "topic": "Games & tournaments",
+      "state": "Untested"
+    },
+    {
+      "section": "DILR",
+      "topic": "Puzzles",
+      "state": "Untested"
+    },
+    {
+      "section": "VARC",
+      "topic": "Inference",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Time-Speed-Distance",
+      "state": "Diagnose"
+    },
+    {
+      "section": "DILR",
+      "topic": "Miscellaneous",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Mixtures & Alligations",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "SICI",
+      "state": "Untested"
+    },
+    {
+      "section": "DILR",
+      "topic": "Geometrical Diagrams",
+      "state": "Untested"
+    },
+    {
+      "section": "DILR",
+      "topic": "Bar Graph",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Ratio-Proportions",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Progressions",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Quadratic Equations",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Sequence & Series",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Time and Work",
+      "state": "Monitor"
+    },
+    {
+      "section": "VARC",
+      "topic": "Jumbled Paragraphs",
+      "state": "Diagnose"
+    },
+    {
+      "section": "VARC",
+      "topic": "Sentence out of context",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Higher Order Polynomials",
+      "state": "Monitor"
+    },
+    {
+      "section": "VARC",
+      "topic": "Central Idea",
+      "state": "Diagnose"
+    },
+    {
+      "section": "DILR",
+      "topic": "Caselet",
+      "state": "Diagnose"
+    },
+    {
+      "section": "VARC",
+      "topic": "Contextual Vocabulary",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Surds & Indices",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Factorials",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Base Systems",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Remainders",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Factors & Multiples",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Odd & Even Numbers",
+      "state": "Diagnose"
+    },
+    {
+      "section": "QA",
+      "topic": "Profit & Loss",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Percentages",
+      "state": "Monitor"
+    },
+    {
+      "section": "VARC",
+      "topic": "Application Question",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Logarithms",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Linear Equations",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Polynomials",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Inequalities",
+      "state": "Untested"
+    },
+    {
+      "section": "VARC",
+      "topic": "Primary Purpose",
+      "state": "Monitor"
+    },
+    {
+      "section": "VARC",
+      "topic": "Style, Tone and Attitude",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Polygons",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Quadrilaterals",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Coordinate Geometry",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Probability",
+      "state": "Untested"
+    },
+    {
+      "section": "QA",
+      "topic": "Permutation & Combination",
+      "state": "Untested"
+    },
+    {
+      "section": "VARC",
+      "topic": "Style Tone & Attitude",
+      "state": "Monitor"
+    },
+    {
+      "section": "VARC",
+      "topic": "Paragraph Completion",
+      "state": "Monitor"
+    },
+    {
+      "section": "DILR",
+      "topic": "Scatter Plot",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Types of Numbers",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Sequences",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "HCF-LCM",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Triangles",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Circles",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Averages",
+      "state": "Monitor"
+    },
+    {
+      "section": "VARC",
+      "topic": "Logical Structure",
+      "state": "Monitor"
+    },
+    {
+      "section": "DILR",
+      "topic": "Table",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Mensuration",
+      "state": "Monitor"
+    },
+    {
+      "section": "QA",
+      "topic": "Functions",
+      "state": "Monitor"
+    }
+  ],
+  "recommended": [
+    "mission-13c6a4af6200",
+    "mission-de940674b992",
+    "mission-f353ff43a51d",
+    "mission-0b6967dfa371",
+    "mission-c574df1c0368",
+    "mission-0f1008f41e1f",
+    "mission-b481d0262861",
+    "mission-8735233ce6f3",
+    "mission-200d45e9f5ed"
+  ]
+}

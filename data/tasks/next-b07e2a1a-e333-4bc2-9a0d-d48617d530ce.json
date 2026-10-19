@@ -1,0 +1,22 @@
+{
+  "id": "next-b07e2a1a-e333-4bc2-9a0d-d48617d530ce",
+  "section": "DILR",
+  "topic": "Groupings & Arrangements",
+  "title": "Fresh transfer: Groupings & Arrangements",
+  "type": "questions",
+  "stage": "fresh-transfer",
+  "isRetest": false,
+  "due": "2026-10-21",
+  "minutes": 40,
+  "xp": 35,
+  "questionIds": [],
+  "requiredFreshCount": 2,
+  "requiresFresh": true,
+  "parentTaskId": "mission-cfe81df7a784",
+  "reason": "100% on 5 checked outcomes; answer-key graded. Use unseen questions; a familiar redo does not close the repair.",
+  "steps": [
+    "Use unused IMS/PYQ material matched to the specific obstacle.",
+    "Attempt before hints; compare routes only after submission.",
+    "If a concept gap persists, assign a specific lesson followed by 5–10 assessment questions."
+  ]
+}

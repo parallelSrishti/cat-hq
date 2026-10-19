@@ -1,0 +1,96 @@
+{
+  "id": "b07e2a1a-e333-4bc2-9a0d-d48617d530ce",
+  "taskId": "mission-cfe81df7a784",
+  "section": "DILR",
+  "topic": "Groupings & Arrangements",
+  "stage": "cold-reattempt",
+  "isRetest": false,
+  "startedAt": "2026-10-19T22:14:39.483Z",
+  "runningSince": null,
+  "accumulatedMs": 176000,
+  "lastAnswerElapsed": 118,
+  "focusedId": "simcat-2-2026:original:dilr:q05",
+  "focusElapsed": 176,
+  "questionSeconds": {
+    "simcat-2-2026:original:dilr:q01": 24,
+    "simcat-2-2026:original:dilr:q02": 24,
+    "simcat-2-2026:original:dilr:q03": 44,
+    "simcat-2-2026:original:dilr:q04": 14,
+    "simcat-2-2026:original:dilr:q05": 70
+  },
+  "answers": [
+    {
+      "questionId": "simcat-2-2026:original:dilr:q01",
+      "response": "D",
+      "correct": true,
+      "verification": "key",
+      "seconds": 20,
+      "at": "2026-10-19T22:14:59.547Z",
+      "reason": "",
+      "hintUsed": false
+    },
+    {
+      "questionId": "simcat-2-2026:original:dilr:q02",
+      "response": "C",
+      "correct": true,
+      "verification": "key",
+      "seconds": 18,
+      "at": "2026-10-19T22:15:21.436Z",
+      "reason": "",
+      "hintUsed": false
+    },
+    {
+      "questionId": "simcat-2-2026:original:dilr:q03",
+      "response": "B",
+      "correct": true,
+      "verification": "key",
+      "seconds": 41,
+      "at": "2026-10-19T22:16:08.688Z",
+      "reason": "",
+      "hintUsed": false
+    },
+    {
+      "questionId": "simcat-2-2026:original:dilr:q04",
+      "response": "B",
+      "correct": true,
+      "verification": "key",
+      "seconds": 12,
+      "at": "2026-10-19T22:16:23.793Z",
+      "reason": "",
+      "hintUsed": false
+    },
+    {
+      "questionId": "simcat-2-2026:original:dilr:q05",
+      "response": "D",
+      "correct": true,
+      "verification": "key",
+      "seconds": 12,
+      "at": "2026-10-19T22:16:37.134Z",
+      "reason": "",
+      "hintUsed": false
+    }
+  ],
+  "version": 11,
+  "elapsedSeconds": 176,
+  "completedAt": "2026-10-19T22:17:35.616Z",
+  "taskCompleted": true,
+  "report": "Q1 and 5. Went with what i thought was right instead of second guessing myself into wrong response",
+  "external": {},
+  "setResults": [
+    {
+      "id": "simcat-2-2026:dilr:block-01",
+      "total": 5,
+      "correct": 5,
+      "verified": true
+    }
+  ],
+  "topicResults": [
+    {
+      "section": "DILR",
+      "topic": "Groupings & Arrangements",
+      "total": 5,
+      "correct": 5,
+      "seconds": 103
+    }
+  ]
+}
