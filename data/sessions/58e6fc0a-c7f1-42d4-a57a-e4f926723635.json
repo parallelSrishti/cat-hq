@@ -1,0 +1,30 @@
+{
+  "id": "58e6fc0a-c7f1-42d4-a57a-e4f926723635",
+  "taskId": "mission-13c6a4af6200",
+  "section": "QA",
+  "topic": "Time-Speed-Distance",
+  "stage": "cold-reattempt",
+  "isRetest": false,
+  "startedAt": "2026-10-19T22:17:54.658Z",
+  "runningSince": "2026-10-19T22:17:54.658Z",
+  "accumulatedMs": 0,
+  "lastAnswerElapsed": 668,
+  "focusedId": "simcat-2-2026:original:qa:q15",
+  "focusElapsed": 697,
+  "questionSeconds": {
+    "simcat-2-2026:original:qa:q11": 697
+  },
+  "answers": [
+    {
+      "questionId": "simcat-2-2026:original:qa:q11",
+      "response": "C",
+      "correct": true,
+      "verification": "key",
+      "seconds": 668,
+      "at": "2026-10-19T22:29:02.878Z",
+      "reason": "",
+      "hintUsed": false
+    }
+  ],
+  "version": 3
+}
